@@ -13,11 +13,12 @@ As part of an EC-funded consortium, I'm working on the development of autonomous
 
 - Simulation and implementation of GNC strategies.
 - Deployment of RL-based autonomous maneuvers for UWV, focusing on enhancing speed, flexibility, and energy efficiency.
+For more information, check out [airship-project](https://airshipproject.eu/).
 
 ### Autonomous Systems for Space and Terrestrial Robotics
 My research work includes applying ML and RL in various contexts to improve autonomy in robotic systems.
 
-- **Reiforcement Learning for undeactuated satellite attitude control:** Developing RL-based attitude controllers for nanosatellites.
+- **ReiNforcement Learning for undeactuated satellite attitude control:** Developing RL-based attitude controllers for nanosatellites.
 - **DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories:** Autonomous floating platforms using Deep Reinforcement Learning to perform high precision position and orientation control under dynamic and uncertain disturbances.
 
 
