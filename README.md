@@ -8,7 +8,7 @@ With a background in computer science, complex systems dynamics, and a keen inte
 
 ### AIRSHIP Project
 As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies for the innovative Unmanned WIG Vehicle (UWV). This involves:
-
+  ![airship logo](assets/img/AIRSHIP_logo.jpg)
 - Simulation and implementation of GNC strategies.
 - Deployment of RL-based policies to autonomously maneuver UWV, focusing on enhancing speed, flexibility, and energy efficiency.
 For more information, check out [airship-project](https://airshipproject.eu/).
