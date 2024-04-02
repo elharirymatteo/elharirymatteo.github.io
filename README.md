@@ -8,7 +8,9 @@ With a background in computer science, complex systems dynamics, and a keen inte
 
 ### AIRSHIP Project
 As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies for the innovative Unmanned WIG Vehicle (UWV). This involves:
-  ![airship logo](assets/img/AIRSHIP_logo.jpg)
+  ![airship logo]()
+  <img src="assets/img/AIRSHIP_logo.jpg" width="15%"/>
+
 - Simulation and implementation of GNC strategies.
 - Deployment of RL-based policies to autonomously maneuver UWV, focusing on enhancing speed, flexibility, and energy efficiency.
 For more information, check out [airship-project](https://airshipproject.eu/).
@@ -23,11 +25,11 @@ My research work includes applying ML and RL in various contexts to improve auto
 
 ## Publications
 
-- "DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories" --MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
-- "Highly-Parallelised Simulator for Reinforcement Learning based Autonomous Navigating Spacecrafts" --17th Symposium on Advanced Space Technologies in Robotics and Automation, 2023
-- "Mobility Strategy of Multi-Limbed Climbing Robots for Asteroid Exploration" --Climbing and Walking Robots Conference, 2023
-- "Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control" --NeurIPS 2021 Workshop on Deployable Decision Making in Embodied Systems
-- "A Validation and Calibration Methodology for Autonomous Navigation of Small Satellites" --IAC (International Astronautical Congress) 2021
+- ["DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories"](https://arxiv.org/abs/2310.04266) --MASSpace'24 (International Worshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
+- ["Highly-Parallelised Simulator for Reinforcement Learning based Autonomous Navigating Spacecrafts"](https://atpi.eventsair.com/astra2023/programme) --17th Symposium on Advanced Space Technologies in Robotics and Automation, 2023
+- ["Mobility Strategy of Multi-Limbed Climbing Robots for Asteroid Exploration"](https://clawar.org/clawar23/proceedings/) --Climbing and Walking Robots Conference, 2023
+- ["Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control"](https://www.dynsyslab.org/deployable-decision-making-in-embodied-systems/) --NeurIPS 2021 Workshop on Deployable Decision Making in Embodied Systems
+- ["A Validation and Calibration Methodology for Autonomous Navigation of Small Satellites"](https://iafastro.directory/iac/paper/id/65082/summary/) --IAC (International Astronautical Congress) 2021
 
 
 ## Connect With Me
