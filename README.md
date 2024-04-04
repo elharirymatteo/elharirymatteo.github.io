@@ -23,6 +23,9 @@ My research work includes applying ML and RL in various contexts to improve auto
 - **DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories:** Autonomous floating platforms using Deep Reinforcement Learning to perform high precision position and orientation control under dynamic and uncertain disturbances.
   ![drift](assets/img/drift.jpeg)
 
+  [![See the project in action](assets/img/platform_paper.jpg)](https://youtu.be/DgYw743_6VI "See the project in action")
+
+
 ## Publications
 
 - ["DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories"](https://arxiv.org/abs/2310.04266) --MASSpace'24 (International Worshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
@@ -36,6 +39,14 @@ My research work includes applying ML and RL in various contexts to improve auto
 
 I'm always open to collaborations, discussions, and opportunities to share insights into AI and robotics. Feel free to connect with me through:
 
-- **Email:** matteo.elhariry@uni.lu
-- **LinkedIn:** linkedin.com/in/matteo-el-hariry-045877ba
-- **GitHub:** https://github.com/elharirymatteo
+<p align="left">
+  <a href="mailto:matteo.elhariry@uni.lu">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Circle-icons-mail.svg" alt="Email" width="30" height="30"/>
+  </a>
+  <a href="https://linkedin.com/in/matteo-el-hariry-045877ba">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" width="30" height="30"/>
+  </a>
+  <a href="https://github.com/elharirymatteo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30"/>
+  </a>
+</p>
