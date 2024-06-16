@@ -28,7 +28,7 @@ For more information, check out [airship-project](https://airshipproject.eu/).
 ### Autonomous Systems for Space and Terrestrial Robotics
 
 #### Reinforcement Learning for Underactuated Satellite Attitude Control
-<img src="assets/img/nac.jpeg" width="30%" />
+<img src="assets/img/react.png" width="30%" />
 
 Developing RL-based attitude controllers for nanosatellites.
 
