@@ -15,7 +15,7 @@ Here's how you can restructure the "Research & Projects" section of your GitHub.
 ## Research & Projects
 
 ### AIRSHIP Project
-<img src="assets/img/AIRSHIP_logo.jpg" width="30%" />
+<img src="assets/img/AIRSHIP_logo.jpg" width="30%" /> <img src="assets/img/airship-sim.png" width="40%" />
 
 As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies for the innovative Unmanned WIG Vehicle (UWV). This involves:
 
@@ -27,16 +27,17 @@ For more information, check out [airship-project](https://airshipproject.eu/).
 ### Autonomous Systems for Space and Terrestrial Robotics
 
 #### Reinforcement Learning for Underactuated Satellite Attitude Control
-<img src="assets/img/react.png" width="30%" />
+<img src="assets/img/react.png" width="93%" />
 
 Developing RL-based attitude controllers for nanosatellites.
+This work investigates the use of Reinforcement Learning for satellite attitude control applied to two working conditions: the nominal case, in which all the actuators (a set of 3 reaction wheels) are working properly, and the underactuated case, where an actuator failure is simulated randomly along one
+of the axes. In particular, a control policy is implemented and evaluated to maneuver a small satellite from a random starting angle to a given pointing target.
 
 #### DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI?si=_4T7YsI8EhEQpZlM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Autonomous floating platforms using Deep Reinforcement Learning to perform high precision position and orientation control under dynamic and uncertain disturbances.
 
-[![See the project in action](assets/img/platform_paper.jpg)](https://youtu.be/DgYw743_6VI "See the project in action")
 
 ## Publications
 
