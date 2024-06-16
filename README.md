@@ -32,7 +32,7 @@ For more information, check out [airship-project](https://airshipproject.eu/).
 Developing RL-based attitude controllers for nanosatellites.
 
 #### DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories
-<img src="assets/img/drift.jpeg" width="30%" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI?si=_4T7YsI8EhEQpZlM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Autonomous floating platforms using Deep Reinforcement Learning to perform high precision position and orientation control under dynamic and uncertain disturbances.
 
