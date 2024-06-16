@@ -1,5 +1,4 @@
 ## About Me
-<div style="color: black;">
 
 Hello! I'm Matteo, a passionate PhD Researcher at the University of Luxembourg and a Machine Learning Engineer. 
 
@@ -62,5 +61,3 @@ I'm always open to collaborations, discussions, and opportunities to share insig
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30"/>
   </a>
 </p>
-
-</div>
