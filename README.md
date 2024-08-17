@@ -48,16 +48,16 @@ Autonomous floating platforms using Deep Reinforcement Learning to perform high 
 
 ## Connect With Me
 
-I'm always open to collaborations, discussions, and opportunities to share insights into AI and robotics. Feel free to connect with me through:
+I'm always open to collaborations, discussions, and opportunities to share insights into AI and robotics. Feel free to reach out through:
 
-<p align="left">
-  <a href="mailto:matteo.elhariry@uni.lu">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Circle-icons-mail.svg" alt="Email" width="30" height="30"/>
-  </a>
+<p align="center">
   <a href="https://linkedin.com/in/matteo-el-hariry-045877ba">
     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" width="30" height="30"/>
   </a>
   <a href="https://github.com/elharirymatteo">
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30"/>
   </a>
+</p>
+<p align="center">
+  email: matteohariry[at]gmail[dot]com 
 </p>
