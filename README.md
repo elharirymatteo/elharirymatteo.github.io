@@ -8,14 +8,13 @@ My current research focus is on improving Reinforcement Learning algorithms (RL)
 I have a Master in Computer Science and Engineering (AI track) from [Politecnico di Milano](https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering), and a double BS degree from PoliMi and [Tongji University](https://en.tongji.edu.cn/p/#/).
 
 While building strong foundations in Machine Learning, complex systems dynamics, and related subjects through formal education, I like to pursue my interest in human behavior and psychology by reading and learning about social dynamics, individual and collective intelligence. My drive is to build and understand AI technologies to explore the high-complexity landscape of decision-making, in ways that are novel to humans and potentially beneficial to tackling [humanity most pressing world problems](https://80000hours.org/problem-profiles/).
-Here's how you can restructure the "Research & Projects" section of your GitHub.io page to match the style shown in the screenshot:
 
 ---
 
 ## Research & Projects
 
 ### AIRSHIP Project
-<img src="assets/img/AIRSHIP_logo.jpg" width="30%" /> <img src="assets/img/airship-sim.png" width="40%" />
+<img src="assets/img/VERTICAL-airshipLogo.png" width="23.7%" /> <img src="assets/img/airship-sim.png" width="40%" />
 
 As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies for the innovative Unmanned WIG Vehicle (UWV). This involves:
 
@@ -27,7 +26,7 @@ For more information, check out [airship-project](https://airshipproject.eu/).
 ### Autonomous Systems for Space and Terrestrial Robotics
 
 #### Reinforcement Learning for Underactuated Satellite Attitude Control
-<img src="assets/img/react.png" width="93%" />
+<img src="assets/img/react.png" width="100%"/>
 
 Developing RL-based attitude controllers for nanosatellites.
 This work investigates the use of Reinforcement Learning for satellite attitude control applied to two working conditions: the nominal case, in which all the actuators (a set of 3 reaction wheels) are working properly, and the underactuated case, where an actuator failure is simulated randomly along one
