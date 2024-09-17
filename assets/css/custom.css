@@ -1,0 +1,174 @@
+/* Body styling with dynamic padding */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-inline: 25vw; /* Dynamically adjust padding based on viewport width */
+    background-color: #f9f9f9;
+}
+
+/* Adjust padding dynamically for smaller screens */
+@media (max-width: 1600px) {
+    body {
+        padding-inline: 20vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+        padding-inline: 15vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        padding-inline: 10vw;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        padding-inline: 5vw;
+    }
+}
+
+/* Text styling */
+h1, h2, h3, h4 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #a3a3a3;
+    margin: 20px 0;
+}
+
+/* About section with dynamic resizing */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+}
+
+.my-photo {
+    max-width: 45%; /* Image will resize with respect to its container */
+    border-radius: 10%;
+    margin-right: 2%;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack image above text */
+        text-align: center;
+    }
+
+    .my-photo {
+        margin: 0 0 20px 0; /* Add margin below the image */
+        width: 70%; /* Adjust image size for smaller screens */
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Project images with dynamic sizing */
+.project-image {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-image-airship {
+    width: 100%; /* Default width */
+    max-width: 23%; /* Responsive resizing */
+    margin-left: 20%;
+}
+
+.project-image-airship2 {
+    width: 100%; /* Default width */
+    max-width: 39%;
+}
+
+.project-image-rans {
+    width: 90%; /* Default width */
+    max-width: 100%;
+    margin-left: 5%;
+}
+
+/* Media queries for project images */
+@media (max-width: 768px) {
+    .project-image-airship, .project-image-airship2, .project-image-rans {
+        width: 100%; /* Images will take full width on smaller screens */
+    }
+}
+
+/* Styling for iframe */
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensure iframe is responsive */
+}
+
+/* List styling */
+ul {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Social links */
+.social-links {
+    text-align: center;
+    margin: 20px;
+}
+
+.social-links img {
+    margin: 0 10px;
+    max-width: 30px;
+}
+
+/* Section background colors */
+.section-light {
+    background-color: #f9f9f9;
+}
+
+.section-dark {
+    background-color: #e9ecef;
+}
+
+.section-dark li {
+    font-size: 0.9em;
+}
+
+.section-dark li a {
+    font-size: 1em;
+}
+/* For centered text */
+.centered {
+    text-align: center;
+}

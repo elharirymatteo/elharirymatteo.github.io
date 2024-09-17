@@ -1,4 +1,6 @@
 title: Matteo El Hariry
-logo: /assets/img/me_.jpeg
 # Description
 theme: jekyll-theme-minimal
+# Link to custom CSS
+include:
+  - assets/css/custom.css

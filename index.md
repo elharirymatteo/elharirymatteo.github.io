@@ -1,9 +1,13 @@
 ## About Me
 
-Hello! I'm Matteo, a passionate PhD Researcher at the University of Luxembourg and a Machine Learning Engineer. 
+![My Photo](/assets/img/my_photo.jpg){: class="my-photo"}
+
+
+Hello! I'm Matteo, currently a PhD Researcher at the University of Luxembourg. 
 
 My current research focus is on improving Reinforcement Learning algorithms (RL) in the context of autonomous complex robotic systems.
 
+Previously, I worked for 3+ years as a Machine Learning Enigneer at [Argotec](https://www.argotecgroup.com/), an aerospace company specialized in micro-satellites for Deep Space. While there, my main role was to develop AI-based solutions to increase satellite's autonomy in space (see projects section below). Additionaly, I contributed to the core algorithms used for the autonomous visual navigation of [LICIACube](https://en.wikipedia.org/wiki/LICIACube) and [ArgoMoon](https://en.wikipedia.org/wiki/ArgoMoon) satellites, respectively part of the NASA [DART](https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test) and [Artemis I](https://en.wikipedia.org/wiki/Artemis_I) Missions.
 
 I have a Master in Computer Science and Engineering (AI track) from [Politecnico di Milano](https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering), and a double BS degree from PoliMi and [Tongji University](https://en.tongji.edu.cn/p/#/).
 
@@ -29,8 +33,7 @@ For more information, check out [airship-project](https://airshipproject.eu/).
 <img src="assets/img/react.png" width="100%"/>
 
 Developing RL-based attitude controllers for nanosatellites.
-This work investigates the use of Reinforcement Learning for satellite attitude control applied to two working conditions: the nominal case, in which all the actuators (a set of 3 reaction wheels) are working properly, and the underactuated case, where an actuator failure is simulated randomly along one
-of the axes. In particular, a control policy is implemented and evaluated to maneuver a small satellite from a random starting angle to a given pointing target.
+This work, done while being at Argotec, investigates the use of Reinforcement Learning for satellite **attitude** control. In particular, the aim was to find control policies for two working conditions: the nominal case, in which all the actuators (a set of 3 reaction wheels) are working properly, and the underactuated case, where an actuator failure is simulated randomly along one of the axes.
 
 #### DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI?si=_4T7YsI8EhEQpZlM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,5 +62,5 @@ I'm always open to collaborations, discussions, and opportunities to share insig
   </a>
 </p>
 <p align="center">
-  email: matteohariry[at]gmail[dot]com 
+  email: matteohariry[at]gmail.com 
 </p>
