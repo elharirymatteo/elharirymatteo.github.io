@@ -9,76 +9,94 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <!-- About Me Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <h2>About Me</h2>
-        <div class="about-content">
+        <div class="about-content"> <!-- Added flex container -->
             <img src="assets/img/my_photo.jpg" alt="Matteo El Hariry" class="my-photo">
             <div class="about-text">
-            <p>Hello! I'm Matteo, currently a PhD Researcher at the University of Luxembourg.</p>
-            <p>My research focus is on improving Reinforcement Learning algorithms (RL) in the context of autonomous complex robotic systems.</p>
-            <p>
-                Previously, I worked for 3+ years as a Machine Learning Engineer at <a href="https://www.argotecgroup.com/">Argotec</a>, 
-                an aerospace company specializing in micro-satellites for Deep Space. I contributed to the core algorithms used 
-                for the autonomous visual navigation of <a href="https://en.wikipedia.org/wiki/LICIACube">LICIACube</a> and 
-                <a href="https://en.wikipedia.org/wiki/ArgoMoon">ArgoMoon</a>, satellites that were part of NASA's 
-                <a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">DART</a> and 
-                <a href="https://en.wikipedia.org/wiki/Artemis_I">Artemis I</a> Missions.
-            </p>
-            <p>
-                I have a Master’s in Computer Science and Engineering (AI track) from 
-                <a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Politecnico di Milano</a> 
-                and a double BS degree from PoliMi and <a href="https://en.tongji.edu.cn/p/#/">Tongji University</a>.
-            </p>
-            <p>
-                While building strong foundations in Machine Learning, complex systems dynamics, and related subjects through formal education, 
-                I like to pursue my interest in human behavior and psychology by reading about social dynamics, individual and collective intelligence. 
-                My drive is to build and understand AI technologies that can explore decision-making in ways novel to humans and potentially beneficial 
-                for tackling <a href="https://80000hours.org/problem-profiles/">humanity's most pressing world problems</a>.
-            </p>
-        </div>
-        </div>
+                <p>Hello! I'm Matteo, currently a PhD Student at the University of Luxembourg.</p>
+                <p>My research focus is on improving Reinforcement Learning algorithms (RL) in the context of autonomous complex robotic systems.</p>
+                <p>
+                    Previously, I worked for 3+ years as a Machine Learning Engineer at <a href="https://www.argotecgroup.com/">Argotec</a>, 
+                    an aerospace company specializing in micro-satellites for Deep Space. I contributed to the core algorithms used 
+                    for the autonomous visual navigation of <a href="https://en.wikipedia.org/wiki/LICIACube">LICIACube</a> and 
+                    <a href="https://en.wikipedia.org/wiki/ArgoMoon">ArgoMoon</a>, satellites that were part of NASA's 
+                    <a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">DART</a> and 
+                    <a href="https://en.wikipedia.org/wiki/Artemis_I">Artemis I</a> Missions.
+                </p>
+                <p>
+                    I have a Master’s in Computer Science and Engineering (AI track) from 
+                    <a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Politecnico di Milano</a> 
+                    and a double BS degree from PoliMi and <a href="https://en.tongji.edu.cn/p/#/">Tongji University</a>.
+                </p>
+                <p>
+                    While building strong foundations in Machine Learning, complex systems dynamics, and related subjects through formal education, 
+                    I like to pursue my interest in human behavior and psychology by reading about social dynamics, individual and collective intelligence. 
+                    My drive is to build and understand AI technologies that can explore decision-making in ways novel to humans and potentially beneficial 
+                    for tackling <a href="https://80000hours.org/problem-profiles/">humanity's most pressing world problems</a>.
+                </p>
+            </div>
+        </div> <!-- End of flex container -->
     </section>
+
     <hr>
     <!-- Research & Projects Section -->
-    <section class="section-light">
-        <h1>Research & Projects</h1>
+    <section class="section-light" id="projects">
+        <h1>Research & Projects</h1>   
+        <div class="project-card">
+            <h2><a href="projects/airship-project.html">Airship</a></h2>
+            <img src="assets/img/VERTICAL-airshipLogo.png" alt="Airship Logo" class="project-image-airship">
+            <img src="assets/img/airship-sim.png" alt="Airship Simulation" class="project-image-airship2">
+            <p>
+                As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies 
+                for the innovative Unmanned WIG Vehicle (UWV).
+            </p>
+            <ul>
+                <li>Simulation and implementation of GNC strategies.</li>
+                <li>Deployment of RL-based policies to autonomously maneuver UWV, focusing on enhancing speed, flexibility, and energy efficiency.</li>
+            </ul>
+            <p>For more information, check out <a href="https://airshipproject.eu/">airship-project</a>.</p>
+        </div>
+    
+        <div class="project-card">
+            <h2><a href="projects/react.html">REACT</a></h2>
+            <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
+            <img src="assets/img/react.png" alt="React Project" class="project-image">
+            <p>
+                Developing RL-based attitude controllers for nanosatellites.
+                This work investigates the use of Reinforcement Learning for satellite attitude control in both nominal and underactuated conditions.
+            </p>
+        </div>
+    
+        <div class="project-card">
+            <h2><a href="projects/drift.html">DRIFT</a></h2>
+            <h3>Deep Reinforcement Learning for Intelligent Floating-platforms Trajectories</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+            <p>
 
-        <h3>AIRSHIP Project</h3>
-        <img src="assets/img/VERTICAL-airshipLogo.png" alt="Airship Logo" class="project-image-airship">
-        <img src="assets/img/airship-sim.png" alt="Airship Simulation" class="project-image-airship2">
-        <p>
-            As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies 
-            for the innovative Unmanned WIG Vehicle (UWV). This involves:
-        </p>
-        <ul>
-            <li>Simulation and implementation of GNC strategies.</li>
-            <li>Deployment of RL-based policies to autonomously maneuver UWV, focusing on enhancing speed, flexibility, and energy efficiency.</li>
-        </ul>
-        <p>For more information, check out <a href="https://airshipproject.eu/">airship-project</a>.</p>
-     
-        <h2>Spacecraft autonomy</h2>
-        <h4>Reinforcement Learning for Underactuated Satellite Attitude Control</h4>
-        <img src="assets/img/react.png" alt="React Project" class="project-image">
-        <p>
-            Developing RL-based attitude controllers for nanosatellites.
-            This work, done while being at Argotec, investigates the use of Reinforcement Learning for satellite attitude control. In particular, the aim was to find control policies for two working conditions: the nominal case, in which all the actuators (a set of 3 reaction wheels) are working properly, and the underactuated case, where an actuator failure is simulated randomly along one of the axes.            
-        </p>
-
-        <h4>DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
-        <p>
-            Autonomous floating platforms using Deep Reinforcement Learning to perform high precision position and orientation control under dynamic and uncertain disturbances.        </p>
+                This study introduces a deep reinforcement learning suite for controlling floating platforms in simulated and real environments. These platforms simulate microgravity, aiding in testing space navigation systems. The suite handles uncertainties with policies trained for precise maneuvers in dynamic conditions, offering robustness and effective transfer from simulation to reality.            </p>
+        </div>
     </section>
+    
 
     <hr>
     <!-- Publications Section -->
-    <section class="section-dark">
+    <section class="section-dark" id="publications">
         <h2>Publications</h2>
         <ul>
             <li>
                 <a href="https://arxiv.org/abs/2310.04266">DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</a> -- 
-                <strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez -- MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
+                <strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez -- IROS '24 (oral presentation) & MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
             </li>
             <li>
                 <a href="https://atpi.eventsair.com/astra2023/programme">Highly-Parallelised Simulator for Reinforcement Learning based Autonomous Navigating Spacecrafts</a> -- 
@@ -99,11 +117,10 @@
         </ul>        
     </section>
     
-
     <!-- Connect with Me Section -->
     <section>
         <h2>Connect with Me</h2>
-        <div class="social-links">
+        <div class="social-links" id="contact">
             <a href="https://linkedin.com/in/matteo-el-hariry-045877ba">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" width="30" height="30">
             </a>
@@ -113,7 +130,6 @@
         </div>
         <p class="centered">Email: matteohariry[at]gmail.com</p>
     </section>
-
 </body>
 
 </html>
