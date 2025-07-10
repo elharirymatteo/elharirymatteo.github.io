@@ -2,34 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* CSS Custom Properties for Theme */
+/* Light mode (default) */
 :root {
-    --bg-color: #f9f9f9;
-    --text-color: #333;
-    --card-bg: #ffffff;
-    --card-border: #ddd;
-    --section-light-bg: #f9f9f9;
-    --section-dark-bg: #e9ecef;
-    --navbar-bg: #333;
-    --navbar-text: #f2f2f2;
-    --navbar-hover-bg: #ddd;
-    --navbar-hover-text: black;
-    --link-color: #007acc;
-    --hr-color: #a3a3a3;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-family-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-background: #ffffff;
     --accent-color: #007acc;
     --primary-color: #333;
     --border-color: #ddd;
-    --card-background: #ffffff;
+    --section-light-bg: #f8f9fa;
+    --section-dark-bg: #e9ecef;
+    --navbar-bg: #ffffff;
+    --navbar-text: #333333;
+    --navbar-hover-bg: #f0f0f0;
+    --navbar-hover-text: #007acc;
+    --link-color: #007acc;
+    --hr-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-family-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Dark mode theme */
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #e0e0e0;
-    --card-bg: #2d2d2d;
-    --card-border: #444;
+    --card-background: #2d2d2d; /* Changed from card-bg to card-background */
+    --accent-color: #4da6ff;
+    --primary-color: #e0e0e0;
+    --border-color: #444;
     --section-light-bg: #1a1a1a;
     --section-dark-bg: #2d2d2d;
     --navbar-bg: #000;
@@ -120,6 +121,42 @@ img {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+}
+
+/* Fix project card text visibility in dark mode */
+.project-card h2 {
+    color: var(--text-color);
+}
+
+.project-card h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.project-card h2 a:hover {
+    color: var(--accent-color);
+}
+
+.project-card h3 {
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.project-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.project-card .project-highlights {
+    color: var(--text-color);
+}
+
+.project-card .project-highlights h4 {
+    color: var(--text-color);
+}
+
+.project-card ul li {
+    color: var(--text-color);
 }
 
 .clickable-card {
@@ -571,7 +608,19 @@ a:hover {
 }
 
 .project-role {
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
+    color: white; /* Force white text for better contrast */
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0.2rem;
+}
+
+.project-role {
+    background-color: var(--accent-color);
+    color: white; /* Black text for better visibility on light blue background */
 }
 
 /* Project Content Layout */
@@ -940,5 +989,233 @@ a:hover {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+}
+
+/* Framework Overview Styling */
+.framework-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.framework-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.framework-features {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.framework-features h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+/* Results Section Styling */
+.results-subsection {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 2rem;
+}
+
+.results-subsection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.results-subsection h3 {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.results-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.result-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.result-media {
+    flex: 0 0 400px;
+    max-width: 400px;
+}
+
+.result-gif,
+.result-plot {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.result-description {
+    flex: 1;
+}
+
+.result-description h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.result-plots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plot-container {
+    text-align: center;
+}
+
+.plot-caption {
+    font-style: italic;
+    color: var(--text-color);
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Performance Summary */
+.performance-summary {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.performance-summary h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.performance-metric {
+    text-align: center;
+    padding: 1rem;
+    background: var(--section-light-bg);
+    border-radius: 8px;
+    border: 2px solid var(--accent-color);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-family: var(--font-family-heading);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .result-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .result-media {
+        flex: none;
+        max-width: 100%;
+    }
+    
+    .result-plots {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .performance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .metric-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* Specific project card styling improvements */
+.project-highlights {
+    background: rgba(0, 122, 204, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+[data-theme="dark"] .project-highlights {
+    background: rgba(77, 166, 255, 0.1);
+}
+
+.project-highlights h4 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.project-highlights ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.project-highlights li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Ensure links in project cards are visible */
+.project-card a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Video container styling for dark mode */
+.project-video {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.project-video iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
