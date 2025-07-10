@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE2THRUST - Solar-Electric Water Propulsion System | Matteo El Hariry</title>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../index.html">Matteo El Hariry</a>
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            🌙 Dark
+        </button>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <h1>Ice2Thrust</h1>
+        <h2>Solar-Electric Water Propulsion System</h2>
+        <div class="project-meta">
+            <span class="project-type">European EIC Pathfinder Project</span>
+            <span class="project-role">Lead Research Scientist - RL-based Autonomous Navigation</span>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <h2>Project Overview</h2>
+            <div class="project-images">
+                <img src="../assets/img/ice2thrust_concept.png" alt="ICE2THRUST concept" 
+     class="project-banner-image" 
+     style="max-width: 80%; max-height: 350px; object-fit: contain;">
+            </div>
+            <div class="project-description">
+                <p>
+                    ICE2THRUST represents a groundbreaking approach to space propulsion, developing the world's first 
+                    In-Situ Resource Utilisation (ISRU) end-to-end process chain that transforms ice into thrust. 
+                    This innovative system utilizes water as a propellant, decomposed by an electrolyser into hydrogen 
+                    and oxygen for subsequent use in a thruster.
+                </p>
+                <p>
+                    As <strong>Lead Research Scientist</strong> for RL-based autonomous navigation systems, I'm responsible 
+                    for developing the intelligent control algorithms that enable autonomous proximity operations, docking, 
+                    and propellant refilling procedures.
+                </p>
+            </div>
+    </section>
+
+    <!-- Technical Approach -->
+    <section class="project-section">
+        <h2>Technical Approach</h2>
+        <div class="technical-grid">
+            <div class="tech-card">
+                <h3>🚀 Solar-Electric Water Electrolysis Propulsion</h3>
+                <p>Development of high-efficiency propulsion systems using water as propellant, achieving the highest specific impulse of all storable chemical propulsion systems.</p>
+            </div>
+            <div class="tech-card">
+                <h3>🤖 Autonomous Proximity Operations</h3>
+                <p>RL-based algorithms for autonomous docking, proximity operations, and propellant refilling procedures with machine learning-enhanced decision making.</p>
+            </div>
+            <div class="tech-card">
+                <h3>⛏️ In-Space Resource Utilization</h3>
+                <p>Advanced systems for water extraction from icy regolith and integration with propulsion systems for self-sustainable space operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Contributions -->
+    <section class="project-section">
+        <h2>My Research Contributions</h2>
+        <div class="contributions">
+            <div class="contribution-section">
+                <h3>Reinforcement Learning for Autonomous Navigation</h3>
+                <ul>
+                    <li><strong>Simulation Environment Development:</strong> Created a modular flight dynamics simulator for 3DoF and 6DoF spacecraft dynamics, enabling the testing of RL algorithms in realistic space scenarios</li>
+                    <li><strong>Autonomous Docking Algorithms:</strong> Developed RL-based policies for precise spacecraft docking operations under uncertain conditions</li>
+                    <li><strong>Lab Testing and Validation:</strong> Conducted extensive testing and validation of algorithms in Zero-G laboratory using a floating platform</li>
+                </ul>
+            </div>
+            
+            <div class="contribution-section">
+                <h3>Machine Learning Integration</h3>
+                <ul>
+                    <li>Integration of deep RL with traditional GNC systems for enhanced performance</li>
+                    <li>Development of sim-to-real transfer techniques for space applications</li>
+                    <li>Real-time decision making algorithms for complex autonomous operations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Links -->
+    <section class="project-section">
+        <h2>Project Resources</h2>
+        <div class="project-links">
+            <a href="https://ice2thrust.space/" target="_blank" class="project-link">Official Project Website</a>
+            <a href="https://ice2thrust.space/project/" target="_blank" class="project-link">Detailed Project Description</a>
+            <a href="https://cordis.europa.eu/project/id/101161690" target="_blank" class="project-link">EU CORDIS Entry</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="project-navigation">
+        <a href="../index.html" class="nav-button">← Back to Portfolio</a>
+        <a href="airship-project.html" class="nav-button">Next Project: AIRSHIP →</a>
+    </section>
+
+    <script>
+        // Theme toggle functionality (same as main page)
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        });
+    </script>
+</body>
+
+</html>

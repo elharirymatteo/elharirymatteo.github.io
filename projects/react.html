@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT - RL for Satellite Attitude Control | Matteo El Hariry</title>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../index.html">Matteo El Hariry</a>
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            🌙 Dark
+        </button>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <h1>REACT</h1>
+        <h2>Reinforcement Learning for Underactuated Satellite Attitude Control</h2>
+        <div class="project-meta">
+            <span class="project-type">Research Project at Argotec</span>
+            <span class="project-role">Machine Learning Engineer</span>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <h2>Project Overview</h2>
+            <div class="project-image-container">
+                <img src="../assets/img/react.png" alt="REACT Project Diagram" class="project-image">
+            </div>
+            <div class="project-description">
+                <p>
+                    The REACT project investigates the application of Deep Reinforcement Learning for satellite attitude control, 
+                    addressing critical challenges in space systems autonomy. This research focuses on developing robust control 
+                    policies that can handle both nominal operations and critical underactuated scenarios.
+                </p>
+                <p>
+                    Conducted during my time at Argotec, this work demonstrates how RL-based controllers can be a fit solution for real systems, particularly in handling actuator failures and maintaining satellite 
+                    pointing accuracy under challenging conditions.
+                </p>
+            </div>
+    </section>
+
+    <!-- Key Contributions -->
+    <section class="project-section">
+        <h2>Key Contributions</h2>
+        <div class="contributions">
+            <div class="contribution-item">
+                <h3>🚀 Novel RL Architecture</h3>
+                <p>Used an adaptation of the PPO (Proximal Policy Optimization) algorithm, tailored for the unique challenges of satellite attitude control.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>⚡ Robust Failure Handling</h3>
+                <p>Created adaptive policies capable of automatically detecting and compensating for actuator failures without explicit failure mode programming.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>📊 Comprehensive Evaluation</h3>
+                <p>Extensive evaluations were run using both simulation and hardware-in-the-loop (HIL) testing environments.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>🔧 Real-time Implementation</h3>
+                <p>Demonstrated feasibility of RL-based control for real-time satellite operations in (HIL) Harware-In-the-Loop setup within space-graded on board computer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="project-section">
+        <h2>Related Publications</h2>
+        <div class="publication-list">
+            <div class="publication-item">
+                <h3><a href="https://arxiv.org/abs/2505.00165">Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control</a></h3>
+                <p><strong>Matteo El Hariry</strong>, Andrea Cini, Giacomo Mellone, Alessandro Balossino</p>
+                <p><em>NeurIPS 2021 Workshop on Deployable Decision Making in Embodied Systems</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="project-navigation">
+        <a href="airship-project.html" class="nav-button">← Previous: AIRSHIP</a>
+        <a href="../index.html" class="nav-button">Back to Portfolio</a>
+        <a href="drift.html" class="nav-button">Next Project: DRIFT →</a>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        });
+    </script>
+</body>
+
+</html>

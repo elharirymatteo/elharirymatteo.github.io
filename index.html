@@ -11,10 +11,12 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">Matteo El Hariry</a>
+        </div>
         <div class="navbar-links">
-            <a href="index.html">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#projects">Research & Projects</a>
             <a href="#publications">Publications</a>
             <a href="#contact">Contact</a>
         </div>
@@ -58,38 +60,95 @@
     <!-- Research & Projects Section -->
     <section class="section-light" id="projects">
         <h1>Research & Projects</h1>   
+        
         <div class="project-card">
-            <h2><a href="projects/airship-project.html">Airship</a></h2>
-            <img src="assets/img/VERTICAL-airshipLogo.png" alt="Airship Logo" class="project-image-airship">
-            <img src="assets/img/airship-sim.png" alt="Airship Simulation" class="project-image-airship2">
+            <h2><a href="projects/ice2thrust-project.html">ICE2THRUST</a></h2>
+            <h3>Solar-Electric Water Propulsion System</h3>
+            <div class="project-images">
+                <img src="assets/img/Ice2Thrust_Logo_Horizontal.png" alt="ICE2THRUST Logo" class="project-image-logo" style="max-width: 200px; margin-right: 20px;">
+                <img src="assets/img/ice2thrust_concept.png" alt="ICE2THRUST Concept" class="project-image" style="max-width: 300px;">
+            </div>
             <p>
-                As part of an EC-funded consortium, I'm working on the development of autonomous Guidance, Navigation, and Control (GNC) strategies 
-                for the innovative Unmanned WIG Vehicle (UWV).
+                As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems for the ICE2THRUST project, 
+                I'm working on next-generation propulsion technologies that utilize water as propellant. This <strong>European EIC Pathfinder project</strong> 
+                aims to demonstrate the world's first In-Situ Resource Utilisation (ISRU) end-to-end process chain.
             </p>
             <ul>
-                <li>Simulation and implementation of GNC strategies.</li>
-                <li>Deployment of RL-based policies to autonomously maneuver UWV, focusing on enhancing speed, flexibility, and energy efficiency.</li>
+                <li>Development of simulation environments for 3DoF and 6DoF spacecraft dynamics</li>
+                <li>Implementation of RL-based modular navigation systems for different parametrizable satellites</li>
+                <li>Sim-to-Real transfer techniques for RL algorithms in realistic laboratory settings</li>
             </ul>
-            <p>For more information, check out <a href="https://airshipproject.eu/">airship-project</a>.</p>
+            <p>For more information, visit <a href="https://ice2thrust.space/" target="_blank">ice2thrust.space</a>.</p>
+        </div>
+        
+        <div class="project-card">
+            <h2><a href="projects/airship-project.html">AIRSHIP</a></h2>
+            <h3>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h3>
+            <div class="project-images">
+                <img src="assets/img/VERTICAL-airshipLogo.png" alt="AIRSHIP Logo" class="project-image-airship">
+                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-image-airship2">
+            </div>
+            <p>
+                As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems, I'm working on 
+                autonomous Guidance, Navigation, and Control (GNC) strategies for innovative Unmanned WIG Vehicles (UWV). 
+                This <strong>Horizon Europe project</strong> focuses on developing cutting-edge autonomous systems for next-generation aviation.
+            </p>
+            <ul>
+                <li>Design and simulation of advanced GNC strategies for WIG vehicles</li>
+                <li>Deployment of RL-based policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency</li>
+                <li>Integration of machine learning algorithms for real-time decision making in complex environments</li>
+            </ul>
+            <p>For more information, check out <a href="https://airshipproject.eu/" target="_blank">airship-project.eu</a>.</p>
         </div>
     
         <div class="project-card">
             <h2><a href="projects/react.html">REACT</a></h2>
             <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
-            <img src="assets/img/react.png" alt="React Project" class="project-image">
+            <div class="project-images">
+                <img src="assets/img/react.png" alt="REACT Project" class="project-image">
+            </div>
             <p>
-                Developing RL-based attitude controllers for nanosatellites.
-                This work investigates the use of Reinforcement Learning for satellite attitude control in both nominal and underactuated conditions.
+                This research investigates the application of Deep Reinforcement Learning for satellite attitude control, 
+                addressing both nominal operations and critical underactuated scenarios. The work demonstrates robust 
+                control policies capable of handling actuator failures in space environments.
             </p>
+            <div class="project-highlights">
+                <h4>Key Contributions:</h4>
+                <ul>
+                    <li>Novel RL-based attitude controllers for nanosatellites using reaction wheels</li>
+                    <li>Robust policies for underactuated scenarios with random actuator failures</li>
+                    <li>Comparative analysis with traditional PID controllers</li>
+                    <li>Real-time performance validation in simulated space environments</li>
+                </ul>
+            </div>
+            <!-- <div class="results-placeholder">
+                <p><em>Detailed results, performance plots, and comparison charts available in the full project page.</em></p>
+            </div> -->
         </div>
     
         <div class="project-card">
             <h2><a href="projects/drift.html">DRIFT</a></h2>
-            <h3>Deep Reinforcement Learning for Intelligent Floating-platforms Trajectories</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+            <h3>Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h3>
+            <div class="project-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+            </div>
             <p>
-
-                This study introduces a deep reinforcement learning suite for controlling floating platforms in simulated and real environments. These platforms simulate microgravity, aiding in testing space navigation systems. The suite handles uncertainties with policies trained for precise maneuvers in dynamic conditions, offering robustness and effective transfer from simulation to reality.            </p>
+                DRIFT introduces a comprehensive deep reinforcement learning framework for controlling floating platforms 
+                in both simulated and real-world environments. These platforms serve as terrestrial analogs for microgravity 
+                conditions, enabling robust testing of space navigation systems with seamless sim-to-real transfer capabilities.
+            </p>
+            <div class="project-highlights">
+                <h4>Key Innovations:</h4>
+                <ul>
+                    <li>First RL-based control suite for floating platforms with proven sim-to-real transfer</li>
+                    <li>Advanced uncertainty handling for dynamic and unpredictable environments</li>
+                    <li>High-precision position and orientation control under external disturbances</li>
+                    <li>Comprehensive evaluation framework for autonomous navigation systems</li>
+                </ul>
+            </div>
+            <!-- <div class="results-placeholder">
+                <p><em>Performance metrics, trajectory analysis, and experimental validation results available in the detailed project page.</em></p>
+            </div> -->
         </div>
     </section>
     
@@ -112,7 +171,7 @@
                 Warley FR Ribeiro, Kentaro Uno, Masazumi Imai, Koki Murase, Barış Can Yalçın, <strong>Matteo El Hariry</strong>, Miguel A Olivares-Mendez, Kazuya Yoshida -- Climbing and Walking Robots Conference, 2023
             </li>
             <li>
-                <a href="https://www.dynsyslab.org/deployable-decision-making-in-embodied-systems/">Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control</a> -- 
+                <a href="https://arxiv.org/abs/2505.00165">Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control</a> -- 
                 <strong>Matteo El Hariry</strong>, Andrea Cini, Giacomo Mellone, Alessandro Balossino -- NeurIPS 2021 Workshop on Deployable Decision Making in Embodied Systems
             </li>
             <li>

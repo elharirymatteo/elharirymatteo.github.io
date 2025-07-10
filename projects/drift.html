@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIFT - RL for Floating Platforms | Matteo El Hariry</title>
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../index.html">Matteo El Hariry</a>
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            🌙 Dark
+        </button>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <h1>DRIFT</h1>
+        <h2>Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h2>
+        <div class="project-meta">
+            <span class="project-type">University of Luxembourg Research</span>
+            <span class="project-role">PhD Research Project</span>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <div class="project-content">
+            <div class="project-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="project-description">
+                <p>
+                    DRIFT introduces a comprehensive deep reinforcement learning framework for controlling floating platforms 
+                    in both simulated and real-world environments. These platforms serve as terrestrial analogs for microgravity 
+                    conditions, enabling robust testing of space navigation systems with seamless sim-to-real transfer capabilities.
+                </p>
+                <p>
+                    This research addresses the critical challenge of developing autonomous systems that can operate effectively 
+                    in uncertain, dynamic environments while maintaining high precision in position and orientation control.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="project-section">
+        <h2>Research Motivation</h2>
+        <div class="problem-context">
+            <h3>Challenges in Autonomous Platform Control</h3>
+            <ul>
+                <li><strong>Environmental Uncertainty:</strong> Dynamic disturbances from air currents, surface friction, and external perturbations</li>
+                <li><strong>Sim-to-Real Gap:</strong> Transferring policies trained in simulation to real-world scenarios</li>
+                <li><strong>Precision Requirements:</strong> High-accuracy position and orientation control for space system testing</li>
+                <li><strong>Real-time Performance:</strong> Low-latency decision making for responsive control</li>
+            </ul>
+            
+            <h3>Applications to Space Systems</h3>
+            <ul>
+                <li>Terrestrial testing of spacecraft navigation algorithms</li>
+                <li>Validation of autonomous docking and proximity operations</li>
+                <li>Microgravity simulation for space robotics development</li>
+                <li>Risk reduction for expensive space missions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Technical Approach -->
+    <section class="project-section">
+        <h2>Technical Methodology</h2>
+        <div class="methodology-grid">
+            <div class="method-card">
+                <h3>🌊 Platform Dynamics</h3>
+                <ul>
+                    <li>6-DOF floating platform modeling</li>
+                    <li>Thruster configuration optimization</li>
+                    <li>Disturbance characterization and modeling</li>
+                    <li>Friction and contact dynamics</li>
+                </ul>
+            </div>
+            <div class="method-card">
+                <h3>🧠 RL Algorithm Development</h3>
+                <ul>
+                    <li>Deep Deterministic Policy Gradient (DDPG)</li>
+                    <li>Twin Delayed DDPG (TD3) implementation</li>
+                    <li>Domain randomization for robustness</li>
+                    <li>Curriculum learning strategies</li>
+                </ul>
+            </div>
+            <div class="method-card">
+                <h3>🔄 Sim-to-Real Transfer</h3>
+                <ul>
+                    <li>High-fidelity simulation environment</li>
+                    <li>Reality gap analysis and mitigation</li>
+                    <li>Progressive deployment strategies</li>
+                    <li>Online adaptation techniques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Results Placeholders -->
+    <section class="project-section">
+        <h2>Research Results</h2>
+        
+        <div class="results-section">
+            <h3>Simulation Performance</h3>
+            <div class="result-placeholder">
+                <h4>Training Convergence Analysis</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for RL training curves and convergence metrics]</p>
+                    <p><em>Expected content: Reward evolution, success rate progression, policy stability analysis</em></p>
+                </div>
+            </div>
+            
+            <div class="result-placeholder">
+                <h4>Trajectory Precision Metrics</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for trajectory tracking accuracy analysis]</p>
+                    <p><em>Expected content: Position/orientation error statistics, tracking performance across different maneuvers</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h3>Real-World Validation</h3>
+            <div class="result-placeholder">
+                <h4>Sim-to-Real Transfer Success</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for real platform performance comparison]</p>
+                    <p><em>Expected content: Simulation vs reality performance gaps, transfer success metrics, adaptation results</em></p>
+                </div>
+            </div>
+            
+            <div class="result-placeholder">
+                <h4>Disturbance Rejection Analysis</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for robustness evaluation under various disturbances]</p>
+                    <p><em>Expected content: Performance under different environmental conditions, disturbance magnitude limits</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h3>Comparative Evaluation</h3>
+            <div class="result-placeholder">
+                <h4>Baseline Controller Comparison</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for RL vs traditional controller performance]</p>
+                    <p><em>Expected content: PID vs RL performance metrics, adaptability comparison, energy efficiency analysis</em></p>
+                </div>
+            </div>
+            
+            <div class="result-placeholder">
+                <h4>Multi-Task Performance Evaluation</h4>
+                <div class="placeholder-content">
+                    <p>[Placeholder for various mission scenario results]</p>
+                    <p><em>Expected content: Point-to-point navigation, trajectory following, formation flying capabilities</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="project-section">
+        <h2>System Architecture</h2>
+        <div class="architecture-overview">
+            <div class="arch-component">
+                <h3>🎯 High-Fidelity Simulation</h3>
+                <p>Advanced physics simulation incorporating realistic dynamics, sensor noise, and environmental disturbances to create training environments that closely match real-world conditions.</p>
+            </div>
+            <div class="arch-component">
+                <h3>🔧 Hardware Platform</h3>
+                <p>Custom-built floating platforms equipped with omnidirectional thrusters, IMU sensors, and real-time control systems for precise maneuvering and data collection.</p>
+            </div>
+            <div class="arch-component">
+                <h3>📡 Communication System</h3>
+                <p>Wireless communication infrastructure enabling real-time control commands and sensor data streaming between the platform and ground control systems.</p>
+            </div>
+            <div class="arch-component">
+                <h3>🖥️ Control Framework</h3>
+                <p>Modular software architecture supporting both traditional control methods and RL-based policies with seamless switching and performance monitoring capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Innovations -->
+    <section class="project-section">
+        <h2>Key Innovations</h2>
+        <div class="contributions">
+            <div class="contribution-item">
+                <h3>🚀 Seamless Sim-to-Real Transfer</h3>
+                <p>Developed novel domain adaptation techniques that enable policies trained in simulation to perform effectively on real hardware with minimal fine-tuning.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>🎯 High-Precision Control</h3>
+                <p>Achieved centimeter-level position accuracy and degree-level orientation precision under dynamic disturbances, surpassing traditional control methods.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>⚡ Real-Time Performance</h3>
+                <p>Optimized neural network architectures and inference pipelines to enable real-time control with sub-millisecond decision latencies.</p>
+            </div>
+            <div class="contribution-item">
+                <h3>🔄 Adaptive Learning</h3>
+                <p>Implemented online adaptation mechanisms that allow the system to continuously improve performance based on real-world experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="project-section">
+        <h2>Related Publications</h2>
+        <div class="publication-list">
+            <div class="publication-item">
+                <h3><a href="https://arxiv.org/abs/2310.04266">DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</a></h3>
+                <p><strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez</p>
+                <p><em>IROS '24 (oral presentation) & MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)</em></p>
+                <div class="publication-links">
+                    <a href="https://arxiv.org/abs/2310.04266" target="_blank">ArXiv Paper</a>
+                    <a href="#" target="_blank">Video Presentation</a>
+                    <a href="#" target="_blank">Code Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="project-navigation">
+        <a href="react.html" class="nav-button">← Previous: REACT</a>
+        <a href="../index.html" class="nav-button">Back to Portfolio</a>
+        <a href="ice2thrust-project.html" class="nav-button">Next Project: ICE2THRUST →</a>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        });
+    </script>
+</body>
+
+</html>

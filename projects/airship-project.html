@@ -1,31 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <nav class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="project1.html">Project 1</a>
-        <a href="project2.html">Project 2</a>
-    </nav>
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Detailed Description</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AIRSHIP - Autonomous WIG Vehicle Control | Matteo El Hariry</title>
+    <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
 <body>
-    <!-- Navigation Link Back to Main Page -->
-    <nav>
-        <a href="../index.html">Back to Home</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="../index.html">Matteo El Hariry</a>
+        </div>
+        <div class="navbar-links">
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#publications">Publications</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            🌙 Dark
+        </button>
     </nav>
 
-    <!-- Project Content -->
-    <section class="project-section">
-        <h1>Project 1 Title</h1>
-        <p>Detailed description of the project, including methodologies, results, images, and links to related work.</p>
-        <img src="assets/img/project1.jpg" alt="Project 1 Image" class="project-image">
+    <!-- Project Header -->
+    <section class="project-header">
+        <h1>AIRSHIP</h1>
+        <h2>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h2>
+        <div class="project-meta">
+            <span class="project-type">Horizon Europe Project</span>
+            <span class="project-role">Lead Research Scientist - RL-based Autonomous Navigation</span>
+        </div>
     </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <div class="project-images">
+            <img src="../assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-banner-image">
+        </div>
+        <div class="project-description">
+            <p>
+                The AIRSHIP project focuses on developing cutting-edge autonomous systems for Unmanned WIG (Wing-in-Ground) Vehicles. 
+                These innovative aircraft operate in the ground effect zone, offering unique advantages in terms of fuel efficiency 
+                and payload capacity for maritime and coastal applications.
+            </p>
+            <p>
+                As <strong>Lead Research Scientist</strong> for RL-based autonomous navigation systems, I'm developing a novel modular flight dynamics simulator, used to derive advanced 
+                Guidance, Navigation, and Control (GNC) strategies that leverage both optimal control and reinforcement learning policies to enable fully autonomous 
+                operation in complex flight control scenarios.
+            </p>
+        </div>
+    </section>
+
+    <!-- Technical Approach -->
+    <section class="project-section">
+        <h2>Technical Innovation</h2>
+        <div class="technical-grid">
+            <div class="tech-card">
+                <h3>🛩️ Advanced GNC Systems</h3>
+                <p>Development of sophisticated guidance, navigation, and control algorithms specifically designed for WIG vehicle dynamics and ground effect phenomena.</p>
+            </div>
+            <div class="tech-card">
+                <h3>🤖 RL-based Autonomous Control</h3>
+                <p>Implementation of deep reinforcement learning policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency.</p>
+            </div>
+            <!-- <div class="tech-card">
+                <h3>🌊 Maritime Environment Adaptation</h3>
+                <p>Adaptive algorithms for handling challenging maritime conditions including waves, wind variations, and dynamic obstacles.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- My Contributions -->
+    <section class="project-section">
+        <h2>My Research Contributions</h2>
+        <div class="contributions">
+            <div class="contribution-section">
+                <h3>Reinforcement Learning for WIG Vehicles</h3>
+                <ul>
+                    <li><strong>Modular flight dynamics simulator:</strong> Developed a novel modular flight dynamics simulator that operates both in MATLAB and Python, enabling seamless integration of RL algorithms for WIG vehicle dynamics.</li>
+                    <li><strong>RL-based control strategies:</strong> Designed and implemented reinforcement learning-based control strategies for autonomous flight in ground effect.</li>
+                    <li><strong>Traditional control integration:</strong> Integrated traditional control techniques like PID, LQR and MPPI as baseline comparisons for RL policies.</li>
+                </ul>
+            </div>
+            
+            <!-- Add more contribution-section divs as needed -->
+        </div>
+    </section>
+
+    <!-- Project Links section -->
+    <section class="project-section">
+        <h2>Project Resources</h2>
+        <div class="project-links">
+            <a href="https://airshipproject.eu/" target="_blank" class="project-link">Official Project Website</a>
+            <a href="https://airshipproject.eu/objectives/" target="_blank" class="project-link">Project Objectives</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="project-navigation">
+        <a href="ice2thrust-project.html" class="nav-button">← Previous: ICE2THRUST</a>
+        <a href="../index.html" class="nav-button">Back to Portfolio</a>
+        <a href="react.html" class="nav-button">Next Project: REACT →</a>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            const button = document.querySelector('.theme-toggle');
+            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        });
+    </script>
 </body>
 
 </html>
