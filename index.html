@@ -62,14 +62,16 @@
         <h1>Research & Projects</h1>   
         
         <div class="project-card">
-            <h2><a href="projects/ice2thrust-project.html">ICE2THRUST</a></h2>
+            <div class="project-title-header">
+                <h2><a href="projects/ice2thrust-project.html">ICE2THRUST <span class="project-date">(2024 - present)</span></a></h2>
+            </div>
             <h3>Solar-Electric Water Propulsion System</h3>
             <div class="project-images">
                 <img src="assets/img/ice2thrust/Ice2Thrust_Logo_Horizontal.png" alt="ICE2THRUST Logo" class="project-image-logo" style="max-width: 200px; margin-right: 20px;">
-                <img src="assets/img/ice2thrust/ice2thrust_concept.png" alt="ICE2THRUST Concept" class="project-image" style="max-width: 300px;">
+                <img src="assets/img/ice2thrust/ice2thrust_concept.png" alt="ICE2THRUST Concept" class="project-image", style="max-width: 90%; max-height: 4000px; object-fit: contain;">
             </div>
             <p>
-                As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems for the ICE2THRUST project, 
+                As <strong>research expert</strong> in the development of RL-based autonomous navigation systems for the ICE2THRUST project, 
                 I'm working on next-generation propulsion technologies that utilize water as propellant. This <strong>European EIC Pathfinder project</strong> 
                 aims to demonstrate the world's first In-Situ Resource Utilisation (ISRU) end-to-end process chain.
             </p>
@@ -84,7 +86,9 @@
         </div>
         
         <div class="project-card">
-            <h2><a href="projects/airship-project.html">AIRSHIP</a></h2>
+            <div class="project-title-header">
+                <h2><a href="projects/airship-project.html">AIRSHIP <span class="project-date">(2023 - present)</span></a></h2>
+            </div>
             <h3>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h3>
             <div class="project-images">
                 <img src="assets/img/airship/VERTICAL-airshipLogo.png" alt="AIRSHIP Logo" class="project-image-airship">
@@ -104,37 +108,27 @@
             </div>
             <p>For more information, check out <a href="https://airshipproject.eu/" target="_blank">airship-project.eu</a>.</p>
         </div>
-    
+
         <div class="project-card">
-            <h2><a href="projects/react.html">REACT</a></h2>
-            <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
+            <div class="project-title-header">
+                <h2><a href="https://snt-spacer.github.io/NavBench-Website/" target="_blank">NavBench <span class="project-date">(2025)</span></a></h2>
+            </div>
+            <h3>A Unified Robotics Benchmark for Reinforcement Learning-Based Autonomous Navigation</h3>
             <div class="project-images">
-                <img src="assets/img/react.png" alt="REACT Project" class="project-image">
+                <img src="assets/img/navbench/nav_bench_banner.png" alt="NavBench Concept" class="project-image", style="max-width: 80%; max-height: 350px; object-fit: contain;">
             </div>
             <p>
-                This research investigates the application of Deep Reinforcement Learning for satellite attitude control, 
-                addressing both nominal operations and critical underactuated scenarios. The work demonstrates robust 
-                control policies capable of handling actuator failures in space environments.
-            </p>
-            <div class="project-highlights">
-                <h4>Key Contributions:</h4>
-                <ul>
-                    <li>Novel RL-based attitude controllers for nanosatellites using reaction wheels</li>
-                    <li>Robust policies for underactuated scenarios with random actuator failures</li>
-                    <li>Comparative analysis with traditional PID controllers</li>
-                    <li>Real-time performance validation in simulated space environments</li>
-                </ul>
-            </div>
-            <!-- <div class="results-placeholder">
-                <p><em>Detailed results, performance plots, and comparison charts available in the full project page.</em></p>
-            </div> -->
+                NavBench extends IsaacLab with a modular and scalable design, enabling unified definitions of tasks and robots, and training one policy per robot-task pair using a shared infrastructure. It uniquely supports sim-to-real transfer across diverse platforms and mediums for evaluating navigation in varied environments.
+            <p>For more information, visit the <a href="https://snt-spacer.github.io/NavBench-Website/" target="_blank">NavBench project website</a>.</p>
         </div>
     
         <div class="project-card">
-            <h2><a href="projects/drift.html">DRIFT</a></h2>
+            <div class="project-title-header">
+                <h2><a href="projects/drift.html">DRIFT <span class="project-date">(2024)</span></a></h2>
+            </div>
             <h3>Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h3>
             <div class="project-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen ></iframe>
             </div>
             <p>
                 DRIFT introduces a comprehensive deep reinforcement learning framework for controlling floating platforms 
@@ -150,10 +144,31 @@
                     <li>Comprehensive evaluation framework for autonomous navigation systems</li>
                 </ul>
             </div>
-            <!-- <div class="results-placeholder">
-                <p><em>Performance metrics, trajectory analysis, and experimental validation results available in the detailed project page.</em></p>
-            </div> -->
         </div>
+        
+        <div class="project-card">
+            <div class="project-title-header">
+                <h2><a href="projects/react.html">REACT <span class="project-date">(2021)</span></a></h2>
+            </div>
+            <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
+            <div class="project-images">
+                <img src="assets/img/react.png" alt="REACT Project" class="project-image">
+            </div>
+            <p>
+                This research investigates the application of Deep Reinforcement Learning for satellite attitude control, 
+                addressing both nominal operations and critical underactuated scenarios. The work demonstrates robust 
+                control policies capable of handling actuator failures for nanosatellites.
+            </p>
+            <div class="project-highlights">
+                <h4>Key Contributions:</h4>
+                <ul>
+                    <li>Novel RL-based attitude controllers for nanosatellites using reaction wheels</li>
+                    <li>Robust policies for underactuated scenarios with random actuator failures</li>
+                    <li>Real-time performance validation in hardware-in-the-loop test-bed</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
     
 
@@ -162,6 +177,10 @@
     <section class="section-dark" id="publications">
         <h2>Publications</h2>
         <ul>
+            <li>
+                <a href="https://arxiv.org/pdf/2505.14526">NavBench: A Comprehensive Benchmark Suite for Spacecraft Autonomous Navigation</a> -- 
+                <strong>Matteo El-Hariry*</strong>, Antoine Richard*, Ricard M. Castan*, Luis F. W. Batista*, Matthieu Geist, Cedric Pradalier, Miguel Olivares-Mendez <em>(Under Review, 2025)</em>
+            </li>
             <li>
                 <a href="https://arxiv.org/abs/2310.04266">DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</a> -- 
                 <strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez -- IROS '24 (oral presentation) & MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
