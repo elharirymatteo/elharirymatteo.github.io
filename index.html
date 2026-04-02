@@ -29,146 +29,193 @@
     <section class="about-section" id="about">
         <h2>About Me</h2>
         <div class="about-content"> <!-- Added flex container -->
-            <img src="assets/img/me_profile.png" alt="Matteo El Hariry" class="my-photo">
+            <div class="about-photo-block">
+                <img src="assets/img/me_profile.png" alt="Matteo El Hariry" class="my-photo">
+                <span class="about-role-badge">Postdoctoral Researcher</span>
+            </div>
             <div class="about-text">
-                <p>Hello! I'm Matteo, currently a PhD Student at the University of Luxembourg.</p>
-                <p>My research focus is on improving <strong>Reinforcement Learning (RL)</strong> algorithms in the context of <strong>autonomous complex robotic systems</strong>.</p>
+                <p>Hello! I’m Matteo — a <strong>Postdoctoral Researcher</strong> in Reinforcement Learning and Autonomous Robotics at the <a href="https://www.uni.lu/">University of Luxembourg</a>. I completed my PhD in December 2025, with a thesis on <em>"Deep Reinforcement Learning Control for Autonomous Robots Mobility in Highly Uncertain Environments."</em></p>
+                <p>My research develops <strong>Reinforcement Learning (RL)</strong> algorithms that enable autonomous complex robotic systems — from spacecraft and floating platforms to fixed-wing aerial vehicles — to operate reliably under significant uncertainty and environmental disturbance.</p>
                 <p>
-                    Previously, I worked for 3+ years as a Machine Learning Engineer at <a href="https://www.argotecgroup.com/">Argotec</a>, 
-                    an aerospace company specializing in micro-satellites for Deep Space. I contributed to the core algorithms used 
-                    for the autonomous visual navigation of <a href="https://en.wikipedia.org/wiki/LICIACube">LICIACube</a> and 
-                    <a href="https://en.wikipedia.org/wiki/ArgoMoon">ArgoMoon</a>, satellites that were part of NASA's 
-                    <a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">DART</a> and 
+                    Previously, I worked for 3+ years as a Machine Learning Engineer at <a href="https://www.argotecgroup.com/">Argotec</a>,
+                    an aerospace company specializing in micro-satellites for Deep Space. I contributed to the core algorithms used
+                    for the autonomous visual navigation of <a href="https://en.wikipedia.org/wiki/LICIACube">LICIACube</a> and
+                    <a href="https://en.wikipedia.org/wiki/ArgoMoon">ArgoMoon</a>, satellites that were part of NASA’s
+                    <a href="https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test">DART</a> and
                     <a href="https://en.wikipedia.org/wiki/Artemis_I">Artemis I</a> Missions.
                 </p>
                 <p>
-                    I have a Master’s in Computer Science and Engineering (AI track) from 
-                    <a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Politecnico di Milano</a> 
+                    I hold a Master’s in Computer Science and Engineering (AI track) from
+                    <a href="https://www.polimi.it/en/international-prospective-students/laurea-magistrale-programmes-equivalent-to-master-of-science/programme-catalogue/computer-science-and-engineering">Politecnico di Milano</a>
                     and a double BS degree from PoliMi and <a href="https://en.tongji.edu.cn/p/#/">Tongji University</a>.
+                    Outside research, I mentor refugees in Luxembourg through the <a href="https://www.ryse.lu/">RYSE Association</a>.
                 </p>
                 <p>
-                    While building strong foundations in Machine Learning, complex systems dynamics, and related subjects through formal education, 
-                    I like to pursue my interest in human behavior and psychology by reading about social dynamics, individual and collective intelligence. 
-                    My drive is to build and understand AI technologies that can explore decision-making in ways novel to humans and potentially beneficial 
-                    for tackling <a href="https://80000hours.org/problem-profiles/">humanity's most pressing world problems</a>.
+                    My drive is to build and understand AI technologies that can explore decision-making in ways novel to humans and potentially beneficial
+                    for tackling <a href="https://80000hours.org/problem-profiles/">humanity’s most pressing world problems</a>.
                 </p>
             </div>
         </div> <!-- End of flex container -->
+        <div class="skills-section">
+            <h3 class="skills-heading">Core Skills</h3>
+            <div class="skills-grid">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">TensorFlow</span>
+                <span class="skill-badge">IsaacLab / Omniverse</span>
+                <span class="skill-badge">Reinforcement Learning</span>
+                <span class="skill-badge">ROS / ROS2</span>
+                <span class="skill-badge">C / C++</span>
+                <span class="skill-badge">Scikit-learn / Pandas</span>
+                <span class="skill-badge">Git / Docker</span>
+                <span class="skill-badge">Sim-to-Real Transfer</span>
+            </div>
+        </div>
     </section>
 
     <hr>
     <!-- Research & Projects Section -->
     <section class="section-light" id="projects">
-        <h1>Research & Projects</h1>   
-        
-        <div class="project-card">
-            <div class="project-title-header">
-                <h2><a href="projects/ice2thrust-project.html">ICE2THRUST <span class="project-date">(2024 - present)</span></a></h2>
-            </div>
-            <h3>Solar-Electric Water Propulsion System</h3>
-            <div class="project-images">
-                <img src="assets/img/ice2thrust/Ice2Thrust_Logo_Horizontal.png" alt="ICE2THRUST Logo" class="project-image-logo" style="max-width: 200px; margin-right: 20px;">
-                <img src="assets/img/ice2thrust/ice2thrust_concept.png" alt="ICE2THRUST Concept" class="project-image", style="max-width: 90%; max-height: 4000px; object-fit: contain;">
-            </div>
-            <p>
-                As <strong>research expert</strong> in the development of RL-based autonomous navigation systems for the ICE2THRUST project, 
-                I'm working on autonomous GNC strategies for satellites aimed at demonstrating the next-generation propulsion technologies that utilize water as propellant. This <strong>European EIC Pathfinder project</strong> 
-                goal is to demonstrate the world's first In-Situ Resource Utilisation (ISRU) end-to-end process chain.
-            </p>
-            <div class="project-highlights">
-            <ul>
-                <li>Development of simulation environments for 3DoF and 6DoF spacecraft dynamics</li>
-                <li>Implementation of RL-based modular navigation systems for different parametrizable satellites</li>
-                <li>Sim-to-Real transfer techniques for RL algorithms in realistic laboratory settings</li>
-            </ul>
-            </div>
-            <p>For more information, visit <a href="https://ice2thrust.space/" target="_blank">ice2thrust.space</a>.</p>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-title-header">
-                <h2><a href="projects/airship-project.html">AIRSHIP <span class="project-date">(2023 - present)</span></a></h2>
-            </div>
-            <h3>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h3>
-            <div class="project-images">
-                <img src="assets/img/airship/VERTICAL-airshipLogo.png" alt="AIRSHIP Logo" class="project-image-airship">
-                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-image-airship2">
-            </div>
-            <p>
-                As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems, I'm working on 
-                autonomous Guidance, Navigation, and Control (GNC) strategies for innovative Unmanned WIG Vehicles (UWV). 
-                This <strong>Horizon Europe project</strong> focuses on developing cutting-edge autonomous systems for next-generation aviation.
-            </p>
-            <div class="project-highlights">
-            <ul>
-                <li>Design and simulation of advanced GNC strategies for WIG vehicles</li>
-                <li>Deployment of RL-based policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency</li>
-                <li>Integration of machine learning algorithms for real-time decision making in complex environments</li>
-            </ul>
-            </div>
-            <p>For more information, check out <a href="https://airshipproject.eu/" target="_blank">airship-project.eu</a>.</p>
-        </div>
+        <h1>Research & Projects</h1>
+        <div class="carousel-wrapper" id="projectCarousel">
+            <button class="carousel-btn carousel-btn-prev" onclick="carouselPrev()" aria-label="Previous project">&#8249;</button>
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="carouselTrack">
 
-        <div class="project-card">
-            <div class="project-title-header">
-                <h2><a href="https://snt-spacer.github.io/RoboRAN-Website/" target="_blank">RoboRAN <span class="project-date">(2025)</span></a></h2>
-            </div>
-            <h3>A Unified Robotics Benchmark for Reinforcement Learning-Based Autonomous Navigation</h3>
-            <div class="project-images">
-                <img src="assets/img/navbench/nav_bench_banner.png" alt="NavBench Concept" class="project-image", style="max-width: 80%; max-height: 350px; object-fit: contain;">
-            </div>
-            <p>
-                RoboRAN extends IsaacLab with a modular and scalable design, enabling unified definitions of tasks and robots, and training one policy per robot-task pair using a shared infrastructure. It uniquely supports sim-to-real transfer across diverse platforms and mediums for evaluating navigation in varied environments.
-            <p>For more information, visit the <a href="https://snt-spacer.github.io/RoboRAN-Website/" target="_blank">RoboRAN project website</a>.</p>
-        </div>
-    
-        <div class="project-card">
-            <div class="project-title-header">
-                <h2><a href="projects/drift.html">DRIFT <span class="project-date">(2024)</span></a></h2>
-            </div>
-            <h3>Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h3>
-            <div class="project-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen ></iframe>
-            </div>
-            <p>
-                DRIFT introduces a comprehensive deep reinforcement learning framework for controlling floating platforms 
-                in both simulated and real-world environments. These platforms serve as terrestrial analogs for microgravity 
-                conditions, enabling robust testing of space navigation systems with seamless sim-to-real transfer capabilities.
-            </p>
-            <div class="project-highlights">
-                <h4>Key Innovations:</h4>
-                <ul>
-                    <li>First RL-based control suite for floating platforms with proven sim-to-real transfer</li>
-                    <li>Advanced uncertainty handling for dynamic and unpredictable environments</li>
-                    <li>High-precision position and orientation control under external disturbances</li>
-                    <li>Comprehensive evaluation framework for autonomous navigation systems</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-title-header">
-                <h2><a href="projects/react.html">REACT <span class="project-date">(2021)</span></a></h2>
-            </div>
-            <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
-            <div class="project-images">
-                <img src="assets/img/react.png" alt="REACT Project" class="project-image">
-            </div>
-            <p>
-                This research investigates the application of Deep Reinforcement Learning for satellite attitude control, 
-                addressing both nominal operations and critical underactuated scenarios. The work demonstrates robust 
-                control policies capable of handling actuator failures for nanosatellites.
-            </p>
-            <div class="project-highlights">
-                <h4>Key Contributions:</h4>
-                <ul>
-                    <li>Novel RL-based attitude controllers for nanosatellites using reaction wheels</li>
-                    <li>Robust policies for underactuated scenarios with random actuator failures</li>
-                    <li>Real-time performance validation in hardware-in-the-loop test-bed</li>
-                </ul>
-            </div>
-        </div>
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2><a href="projects/ice2thrust-project.html">ICE2THRUST <span class="project-date">(2025 – present)</span></a></h2>
+                                <a href="projects/ice2thrust-project.html" class="view-project-btn">View project →</a>
+                            </div>
+                            <h3>Solar-Electric Water Propulsion System</h3>
+                            <div class="project-images">
+                                <img src="assets/img/ice2thrust/Ice2Thrust_Logo_Horizontal.png" alt="ICE2THRUST Logo" class="project-image-logo" style="max-width: 200px; margin-right: 20px;">
+                                <img src="assets/img/ice2thrust/ice2thrust_concept.png" alt="ICE2THRUST Concept" class="project-image" style="max-width: 90%; max-height: 300px; object-fit: contain;">
+                            </div>
+                            <p>As <strong>Lead Research Scientist</strong> for RL-based autonomous navigation in the ICE2THRUST project, I'm developing autonomous GNC strategies for spacecraft aimed at demonstrating the world's first In-Situ Resource Utilisation (ISRU) end-to-end process chain. This <strong>European EIC Pathfinder project</strong> converts water ice extracted in space into thrust via solar-electric water electrolysis propulsion.</p>
+                            <div class="project-highlights">
+                                <ul>
+                                    <li>Development of simulation environments for 3DoF and 6DoF spacecraft dynamics</li>
+                                    <li>Implementation of RL-based modular navigation systems for different parametrizable satellites</li>
+                                    <li>Sim-to-Real transfer techniques for RL algorithms in realistic laboratory settings</li>
+                                </ul>
+                            </div>
+                            <p>For more information, visit <a href="https://ice2thrust.space/" target="_blank">ice2thrust.space</a>.</p>
+                        </div>
+                    </div>
 
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2>FALCON-S <span class="project-date">(2026)</span></h2>
+                            </div>
+                            <h3>Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</h3>
+                            <div class="project-images">
+                                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="FALCON-S WIG vehicle simulation" class="project-image" style="max-width: 80%; max-height: 300px; object-fit: contain;">
+                            </div>
+                            <p>FALCON-S introduces a comprehensive simulation and learning framework for autonomous control of fixed-wing <strong>Wing-in-Ground (WIG) effect vehicles</strong>. The suite addresses the unique aerodynamic challenges of near-surface flight, where ground-effect interactions create highly nonlinear and rapidly varying dynamics that classical controllers struggle to handle robustly.</p>
+                            <div class="project-highlights">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>High-fidelity aerodynamics simulation suite for WIG-effect fixed-wing vehicles</li>
+                                    <li>Deep RL controllers robust to ground-proximity aerodynamic perturbations</li>
+                                    <li>Systematic evaluation benchmarks for near-surface autonomous flight</li>
+                                    <li>Benchmarked against classical GNC baselines (PID, LQR, MPPI)</li>
+                                </ul>
+                            </div>
+                            <p><em>RSS 2026 (under review)</em> &mdash; <strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2><a href="projects/airship-project.html">AIRSHIP <span class="project-date">(2023 – present)</span></a></h2>
+                                <a href="projects/airship-project.html" class="view-project-btn">View project →</a>
+                            </div>
+                            <h3>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h3>
+                            <div class="project-images">
+                                <img src="assets/img/airship/VERTICAL-airshipLogo.png" alt="AIRSHIP Logo" class="project-image-airship">
+                                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-image-airship2">
+                            </div>
+                            <p>As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems, I'm working on autonomous Guidance, Navigation, and Control (GNC) strategies for innovative Unmanned WIG Vehicles (UWV). This <strong>Horizon Europe project</strong> focuses on developing cutting-edge autonomous systems for next-generation aviation.</p>
+                            <div class="project-highlights">
+                                <ul>
+                                    <li>Design and simulation of advanced GNC strategies for WIG vehicles</li>
+                                    <li>Deployment of RL-based policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency</li>
+                                    <li>Integration of machine learning algorithms for real-time decision making in complex environments</li>
+                                </ul>
+                            </div>
+                            <p>For more information, check out <a href="https://airshipproject.eu/" target="_blank">airshipproject.eu</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2><a href="https://snt-spacer.github.io/RoboRAN-Website/" target="_blank">RoboRAN <span class="project-date">(2025)</span></a></h2>
+                                <a href="https://snt-spacer.github.io/RoboRAN-Website/" target="_blank" class="view-project-btn">Project website →</a>
+                            </div>
+                            <h3>A Unified Robotics Benchmark for Reinforcement Learning-Based Autonomous Navigation</h3>
+                            <div class="project-images">
+                                <img src="assets/img/navbench/nav_bench_banner.png" alt="RoboRAN Banner" class="project-image" style="max-width: 80%; max-height: 300px; object-fit: contain;">
+                            </div>
+                            <p>RoboRAN extends IsaacLab with a modular and scalable design, enabling unified definitions of tasks and robots, and training one policy per robot-task pair using a shared infrastructure. It uniquely supports sim-to-real transfer across diverse platforms and mediums for evaluating navigation in varied environments.</p>
+                            <p>For more information, visit the <a href="https://snt-spacer.github.io/RoboRAN-Website/" target="_blank">RoboRAN project website</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2><a href="projects/drift.html">DRIFT <span class="project-date">(2024)</span></a></h2>
+                                <a href="projects/drift.html" class="view-project-btn">View project →</a>
+                            </div>
+                            <h3>Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</h3>
+                            <div class="project-video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgYw743_6VI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p>DRIFT introduces a comprehensive deep reinforcement learning framework for controlling floating platforms in both simulated and real-world environments. These platforms serve as terrestrial analogs for microgravity conditions, enabling robust testing of space navigation systems with seamless sim-to-real transfer capabilities.</p>
+                            <div class="project-highlights">
+                                <h4>Key Innovations:</h4>
+                                <ul>
+                                    <li>First RL-based control suite for floating platforms with proven sim-to-real transfer</li>
+                                    <li>Advanced uncertainty handling for dynamic and unpredictable environments</li>
+                                    <li>High-precision position and orientation control under external disturbances</li>
+                                    <li>Comprehensive evaluation framework for autonomous navigation systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-title-header">
+                                <h2><a href="projects/react.html">REACT <span class="project-date">(2021)</span></a></h2>
+                                <a href="projects/react.html" class="view-project-btn">View project →</a>
+                            </div>
+                            <h3>Reinforcement Learning for Underactuated Satellite Attitude Control</h3>
+                            <div class="project-images">
+                                <img src="assets/img/react.png" alt="REACT Project" class="project-image">
+                            </div>
+                            <p>This research investigates the application of Deep Reinforcement Learning for satellite attitude control, addressing both nominal operations and critical underactuated scenarios. The work demonstrates robust control policies capable of handling actuator failures for nanosatellites.</p>
+                            <div class="project-highlights">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>Novel RL-based attitude controllers for nanosatellites using reaction wheels</li>
+                                    <li>Robust policies for underactuated scenarios with random actuator failures</li>
+                                    <li>Real-time performance validation in hardware-in-the-loop test-bed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end carousel-track -->
+            </div><!-- end carousel-viewport -->
+            <button class="carousel-btn carousel-btn-next" onclick="carouselNext()" aria-label="Next project">&#8250;</button>
+        </div><!-- end carousel-wrapper -->
+        <div class="carousel-dots" id="carouselDots"></div>
     </section>
     
 
@@ -176,96 +223,136 @@
     <!-- Publications Section -->
     <section class="section-dark" id="publications">
         <h2>Publications</h2>
-        <ul>
-            <li>
-                <strong><a href="https://arxiv.org/pdf/2505.14526">RoboRAN: A Unified Robotics Framework for Reinforcement Learning-Based Autonomous Navigation,</a></strong> -- 
-                <strong>Matteo El-Hariry*</strong>, Antoine Richard*, Ricard M. Castan*, Luis F. W. Batista*, Matthieu Geist, Cedric Pradalier, Miguel Olivares-Mendez -- 
-                <em>Transactions on Machine Learning Research (TMLR), November 2025</em>
+        <ul class="pub-list">
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://arxiv.org/pdf/2505.14526">RoboRAN: A Unified Robotics Framework for Reinforcement Learning-Based Autonomous Navigation</a></div>
+                <div class="pub-authors"><strong>Matteo El-Hariry*</strong>, Antoine Richard*, Ricard M. Castan*, Luis F. W. Batista*, Matthieu Geist, Cedric Pradalier, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>Transactions on Machine Learning Research (TMLR), November 2025</em></div>
             </li>
-            <li>
-                <strong>FALCON-S: Fixed-wing Aerodynamics and Learning Control Suite</strong> -- 
-                <strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Antoine Richard, Matthieu Geist, Miguel Olivares-Mendez -- 
-                <em>Under review at ICLR 2026 Conference</em>
+            <li class="pub-entry">
+                <div class="pub-title">Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</div>
+                <div class="pub-authors"><strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>RSS 2026 (under review)</em></div>
             </li>
-            <li> 
-                <a href="https://arxiv.org/abs/2510.22699">RL-AVIST: Reinforcement Learning for Autonomous Visual Inspection of Space Targets</a> -- 
-                <strong>Matteo El-Hariry</strong>, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez -- 
-                International Astronautical Congress (IAC) 2025
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2510.22699">RL-AVIST: Reinforcement Learning for Autonomous Visual Inspection of Space Targets</a></div>
+                <div class="pub-authors"><strong>Matteo El-Hariry</strong>, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>International Astronautical Congress (IAC) 2025</em></div>
             </li>
-            <li>
-                <a href="https://arxiv.org/abs/2510.16738">Towards Active Excitation-Based Dynamic Inertia Identification in Satellites</a> -- 
-                <strong>Matteo El-Hariry</strong>, Vittorio Franzese, Miguel Olivares-Mendez -- 
-                International Conference on Space Robotics (iSPaRo) 2025
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2510.16738">Towards Active Excitation-Based Dynamic Inertia Identification in Satellites</a></div>
+                <div class="pub-authors"><strong>Matteo El-Hariry</strong>, Vittorio Franzese, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>International Conference on Space Robotics (iSPaRo) 2025</em></div>
             </li>
-            <li>
-                <strong>Spacecraft Angular Rate Estimation via Event-Based Camera Sensing</strong> -- 
-                Vittorio Franzese, <strong>Matteo El Hariry</strong> -- 
-                <em>Under review at Advances in Space Research (ASR)</em>
+            <li class="pub-entry">
+                <div class="pub-title">Spacecraft Angular Rate Estimation via Event-Based Camera Sensing</div>
+                <div class="pub-authors">Vittorio Franzese, <strong>Matteo El Hariry</strong></div>
+                <div class="pub-venue"><em>Advances in Space Research (ASR)</em></div>
             </li>
-            <li>
-                <a href="https://arxiv.org/abs/2310.04266">DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</a> -- 
-                <strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez -- 
-                IROS '24 (oral presentation) & MASSpace'24 (International Workshop on Autonomous Agents and Multi-Agent Systems for Space Applications)
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2310.04266">DRIFT: Deep Reinforcement Learning for Intelligent Floating Platforms Trajectories</a></div>
+                <div class="pub-authors"><strong>Matteo El-Hariry</strong>, Antoine Richard, Vivek Muralidharan, Matthieu Geist, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>IROS 2024 (oral presentation) &amp; MASSpace 2024</em></div>
             </li>
-            <li>
-                <a href="https://atpi.eventsair.com/astra2023/programme">Highly-Parallelised Simulator for Reinforcement Learning based Autonomous Navigating Spacecrafts</a> -- 
-                <strong>Matteo El-Hariry</strong>, Antoine Richard, Miguel Olivares-Mendez -- 
-                17th Symposium on Advanced Space Technologies in Robotics and Automation, 2023
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://atpi.eventsair.com/astra2023/programme">Highly-Parallelised Simulator for Reinforcement Learning based Autonomous Navigating Spacecrafts</a></div>
+                <div class="pub-authors"><strong>Matteo El-Hariry</strong>, Antoine Richard, Miguel Olivares-Mendez</div>
+                <div class="pub-venue"><em>ASTRA 2023 — Symposium on Advanced Space Technologies in Robotics and Automation</em></div>
             </li>
-            <li>
-                <a href="https://clawar.org/clawar23/proceedings/">Mobility Strategy of Multi-Limbed Climbing Robots for Asteroid Exploration</a> -- 
-                Warley FR Ribeiro, Kentaro Uno, Masazumi Imai, Koki Murase, Barış Can Yalçın, <strong>Matteo El Hariry</strong>, Miguel A Olivares-Mendez, Kazuya Yoshida -- 
-                Climbing and Walking Robots Conference, 2023
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://clawar.org/clawar23/proceedings/">Mobility Strategy of Multi-Limbed Climbing Robots for Asteroid Exploration</a></div>
+                <div class="pub-authors">Warley FR Ribeiro, Kentaro Uno, Masazumi Imai, Koki Murase, Barış Can Yalçın, <strong>Matteo El Hariry</strong>, Miguel A Olivares-Mendez, Kazuya Yoshida</div>
+                <div class="pub-venue"><em>CLAWAR 2023 — Climbing and Walking Robots Conference</em></div>
             </li>
-            <li>
-                <a href="https://arxiv.org/abs/2505.00165">Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control</a> -- 
-                <strong>Matteo El Hariry</strong>, Andrea Cini, Giacomo Mellone, Alessandro Balossino -- 
-                NeurIPS 2021 Workshop on Deployable Decision Making in Embodied Systems
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://arxiv.org/abs/2505.00165">Deep Reinforcement Learning Policies for Underactuated Satellite Attitude Control</a></div>
+                <div class="pub-authors"><strong>Matteo El Hariry</strong>, Andrea Cini, Giacomo Mellone, Alessandro Balossino</div>
+                <div class="pub-venue"><em>NeurIPS 2021 — Workshop on Deployable Decision Making in Embodied Systems</em></div>
             </li>
-            <li>
-                <a href="https://iafastro.directory/iac/paper/id/65082/summary/">A Validation and Calibration Methodology for Autonomous Navigation of Small Satellites</a> -- 
-                Sarah Ciaglia, Nicolò Roberto Benigno, <strong>Matteo El Hariry</strong>, Pasquale Tricarico, Valentina Marchese, Niccolò Battezzati, Simone Simonetti -- 
-                IAC (International Astronautical Congress) 2021
+            <li class="pub-entry">
+                <div class="pub-title"><a href="https://iafastro.directory/iac/paper/id/65082/summary/">A Validation and Calibration Methodology for Autonomous Navigation of Small Satellites</a></div>
+                <div class="pub-authors">Sarah Ciaglia, Nicolò Roberto Benigno, <strong>Matteo El Hariry</strong>, Pasquale Tricarico, Valentina Marchese, Niccolò Battezzati, Simone Simonetti</div>
+                <div class="pub-venue"><em>International Astronautical Congress (IAC) 2021</em></div>
             </li>
-        </ul>        
+        </ul>
     </section>
     
     <!-- Connect with Me Section -->
     <section>
         <h2>Connect with Me</h2>
         <div class="social-links" id="contact">
-            <a href="https://linkedin.com/in/matteo-el-hariry-045877ba">
+            <a href="https://linkedin.com/in/matteo-el-hariry-045877ba" title="LinkedIn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" width="30" height="30">
             </a>
-            <a href="https://github.com/elharirymatteo">
+            <a href="https://github.com/elharirymatteo" title="GitHub">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30">
+            </a>
+            <a href="https://scholar.google.com/citations?user=h2zJ-ZwAAAAJ&hl=en" title="Google Scholar" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="30" height="30">
+            </a>
+            <a href="https://orcid.org/0009-0007-5231-5898" title="ORCID" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="30" height="30">
             </a>
         </div>
         <p class="centered">Email: matteohariry[at]gmail.com</p>
     </section>
 
     <script>
-        // Theme toggle functionality
+        // Theme toggle
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
-            // Update button text
             const button = document.querySelector('.theme-toggle');
             button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
         }
 
-        // Load saved theme on page load
+        // Carousel
+        let carouselIndex = 0;
+        let carouselTimer;
+
+        function carouselGoTo(index) {
+            const track = document.getElementById('carouselTrack');
+            const slides = track.querySelectorAll('.carousel-slide');
+            carouselIndex = (index + slides.length) % slides.length;
+            track.style.transform = 'translateX(-' + (carouselIndex * 100) + '%)';
+            document.querySelectorAll('.carousel-dot').forEach(function(dot, i) {
+                dot.classList.toggle('active', i === carouselIndex);
+            });
+        }
+
+        function carouselNext() { carouselGoTo(carouselIndex + 1); resetCarouselTimer(); }
+        function carouselPrev() { carouselGoTo(carouselIndex - 1); resetCarouselTimer(); }
+
+        function resetCarouselTimer() {
+            clearInterval(carouselTimer);
+            carouselTimer = setInterval(function() { carouselGoTo(carouselIndex + 1); }, 6000);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            // Theme
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            // Update button text based on current theme
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+            document.querySelector('.theme-toggle').textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+
+            // Carousel dots
+            const track = document.getElementById('carouselTrack');
+            if (track) {
+                const slides = track.querySelectorAll('.carousel-slide');
+                const dotsContainer = document.getElementById('carouselDots');
+                slides.forEach(function(_, i) {
+                    const dot = document.createElement('button');
+                    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+                    dot.addEventListener('click', function() { carouselGoTo(i); resetCarouselTimer(); });
+                    dotsContainer.appendChild(dot);
+                });
+                const viewport = document.querySelector('.carousel-viewport');
+                viewport.addEventListener('mouseenter', function() { clearInterval(carouselTimer); });
+                viewport.addEventListener('mouseleave', resetCarouselTimer);
+                resetCarouselTimer();
+            }
         });
     </script>
 </body>

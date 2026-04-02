@@ -60,17 +60,17 @@
         <h2>Technical Innovation</h2>
         <div class="technical-grid">
             <div class="tech-card">
-                <h3>🛩️ Advanced GNC Systems</h3>
-                <p>Development of sophisticated guidance, navigation, and control algorithms specifically designed for WIG vehicle dynamics and ground effect phenomena.</p>
+                <h3>🛩️ Ground-Effect Aerodynamics Simulation</h3>
+                <p>Modular flight-dynamics simulator in MATLAB and Python, capturing the highly nonlinear ground-effect aerodynamics of WIG vehicles flying close to the water surface.</p>
             </div>
             <div class="tech-card">
                 <h3>🤖 RL-based Autonomous Control</h3>
-                <p>Implementation of deep reinforcement learning policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency.</p>
+                <p>Deep reinforcement learning policies for autonomous low-altitude flight, achieving enhanced speed, flexibility, and energy efficiency compared to traditional approaches.</p>
             </div>
-            <!-- <div class="tech-card">
-                <h3>🌊 Maritime Environment Adaptation</h3>
-                <p>Adaptive algorithms for handling challenging maritime conditions including waves, wind variations, and dynamic obstacles.</p>
-            </div> -->
+            <div class="tech-card">
+                <h3>📊 Classical GNC Benchmarking</h3>
+                <p>Systematic benchmarking of RL policies against classical GNC baselines — PID, LQR, and MPPI — providing rigorous performance comparison across flight regimes.</p>
+            </div>
         </div>
     </section>
 
@@ -79,15 +79,20 @@
         <h2>My Research Contributions</h2>
         <div class="contributions">
             <div class="contribution-section">
-                <h3>Reinforcement Learning for WIG Vehicles</h3>
+                <h3>Simulation Framework</h3>
                 <ul>
-                    <li><strong>Modular flight dynamics simulator:</strong> Developed a novel modular flight dynamics simulator that operates both in MATLAB and Python, enabling seamless integration of RL algorithms for WIG vehicle dynamics.</li>
-                    <li><strong>RL-based control strategies:</strong> Designed and implemented reinforcement learning-based control strategies for autonomous flight in ground effect.</li>
-                    <li><strong>Traditional control integration:</strong> Integrated traditional control techniques like PID, LQR and MPPI as baseline comparisons for RL policies.</li>
+                    <li><strong>Modular flight dynamics simulator:</strong> Built a novel modular flight dynamics simulator operating in both MATLAB and Python, capturing ground-effect aerodynamics and parametrizable airframe configurations.</li>
+                    <li><strong>Realistic disturbance modeling:</strong> Integrated wind disturbances, sensor noise, and surface proximity effects to enable training under realistic maritime operating conditions.</li>
                 </ul>
             </div>
-            
-            <!-- Add more contribution-section divs as needed -->
+            <div class="contribution-section">
+                <h3>Autonomous GNC Policies</h3>
+                <ul>
+                    <li><strong>RL-based control strategies:</strong> Designed and trained deep RL controllers for autonomous low-altitude flight in ground effect, targeting robust operation for maritime and coastal missions.</li>
+                    <li><strong>Classical baseline comparisons:</strong> Benchmarked RL policies against PID, LQR, and MPPI controllers to rigorously evaluate the advantages of learning-based approaches.</li>
+                    <li><strong>Goal:</strong> Enable fully autonomous maritime and coastal operations for unmanned WIG vehicles, a class of vehicles with no existing autonomous GNC solution.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
