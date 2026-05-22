@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIRSHIP - Autonomous WIG Vehicle Control | Matteo El Hariry</title>
+    <title>AIRSHIP &amp; FALCON-S — Autonomous WIG Vehicle Control | Matteo El Hariry</title>
     <link rel="stylesheet" href="../assets/css/custom.css">
 </head>
 
@@ -27,70 +27,94 @@
 
     <!-- Project Header -->
     <section class="project-header">
-        <h1>AIRSHIP</h1>
-        <h2>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h2>
+        <div class="project-header-tags">
+            <span class="header-tag">AIRSHIP</span>
+            <span class="header-tag header-tag-accent">FALCON-S</span>
+        </div>
+        <h1>AIRSHIP &amp; FALCON-S</h1>
+        <h2>Autonomous GNC and High-Fidelity Simulation for Unmanned Wing-in-Ground Vehicles</h2>
         <div class="project-meta">
             <span class="project-type">Horizon Europe Project</span>
-            <span class="project-role">Lead Research Scientist - RL-based Autonomous Navigation</span>
+            <span class="project-role">Lead Research Scientist — RL-based Autonomous Navigation</span>
+            <span class="project-role">RSS 2026 (under review)</span>
         </div>
     </section>
 
     <!-- Project Overview -->
     <section class="project-section">
-        <h2>Project Overview</h2>
+        <h2>Overview</h2>
         <div class="project-images">
-            <img src="../assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-banner-image">
+            <img src="../assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP / FALCON-S simulation" class="project-banner-image">
         </div>
         <div class="project-description">
             <p>
-                The AIRSHIP project focuses on developing cutting-edge autonomous systems for Unmanned WIG (Wing-in-Ground) Vehicles. 
-                These innovative aircraft operate in the ground effect zone, offering unique advantages in terms of fuel efficiency 
-                and payload capacity for maritime and coastal applications.
+                <strong>AIRSHIP</strong> is a Horizon Europe project developing autonomous systems for
+                <strong>Unmanned Wing-in-Ground (WIG) Vehicles</strong> — a class of fixed-wing aircraft that fly
+                close to the surface, exploiting ground-effect aerodynamics for fuel efficiency and payload capacity
+                in maritime and coastal applications.
             </p>
             <p>
-                As <strong>Lead Research Scientist</strong> for RL-based autonomous navigation systems, I'm developing a novel modular flight dynamics simulator, used to derive advanced 
-                Guidance, Navigation, and Control (GNC) strategies that leverage both optimal control and reinforcement learning policies to enable fully autonomous 
-                operation in complex flight control scenarios.
+                As <strong>Lead Research Scientist</strong> on RL-based autonomous navigation, I lead the development
+                of advanced Guidance, Navigation, and Control (GNC) strategies that combine optimal control and
+                reinforcement learning policies for autonomous low-altitude flight.
+            </p>
+            <p>
+                Out of this work, I built <strong>FALCON-S</strong> — a high-fidelity simulation and learning framework
+                for fixed-wing robots in ground effect, currently under review at <em>RSS 2026</em>. FALCON-S is the
+                technical backbone behind AIRSHIP's autonomous GNC pipeline.
             </p>
         </div>
     </section>
 
-    <!-- Technical Approach -->
-    <section class="project-section">
-        <h2>Technical Innovation</h2>
+    <!-- FALCON-S Spotlight -->
+    <section class="project-section spotlight-section">
+        <h2>FALCON-S — Simulation &amp; Learning Framework</h2>
+        <p class="spotlight-tagline">Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</p>
+        <p>
+            FALCON-S addresses the unique aerodynamic challenges of near-surface flight, where ground-effect
+            interactions create highly nonlinear and rapidly varying dynamics that classical controllers struggle to
+            handle robustly. The framework provides a unified environment for training, evaluating, and benchmarking
+            autonomous controllers across realistic WIG-vehicle flight regimes.
+        </p>
         <div class="technical-grid">
             <div class="tech-card">
-                <h3>🛩️ Ground-Effect Aerodynamics Simulation</h3>
-                <p>Modular flight-dynamics simulator in MATLAB and Python, capturing the highly nonlinear ground-effect aerodynamics of WIG vehicles flying close to the water surface.</p>
+                <h3>🛩️ Ground-Effect Aerodynamics</h3>
+                <p>Modular flight-dynamics simulator (MATLAB &amp; Python) capturing the highly nonlinear ground-effect aerodynamics of fixed-wing vehicles flying close to the surface.</p>
             </div>
             <div class="tech-card">
-                <h3>🤖 RL-based Autonomous Control</h3>
-                <p>Deep reinforcement learning policies for autonomous low-altitude flight, achieving enhanced speed, flexibility, and energy efficiency compared to traditional approaches.</p>
+                <h3>🤖 Deep RL Controllers</h3>
+                <p>Deep reinforcement learning policies for autonomous low-altitude flight, robust to ground-proximity aerodynamic perturbations, sensor noise, and wind disturbances.</p>
             </div>
             <div class="tech-card">
-                <h3>📊 Classical GNC Benchmarking</h3>
-                <p>Systematic benchmarking of RL policies against classical GNC baselines — PID, LQR, and MPPI — providing rigorous performance comparison across flight regimes.</p>
+                <h3>📊 Classical GNC Benchmarks</h3>
+                <p>Systematic benchmarking of RL policies against classical baselines — PID, LQR, and MPPI — across the full envelope of near-surface flight regimes.</p>
             </div>
         </div>
+        <p class="pub-callout">
+            <strong>Publication:</strong>
+            <em>Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</em>
+            — <strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez.
+            <span class="pub-venue-pill">RSS 2026 (under review)</span>
+        </p>
     </section>
 
     <!-- My Contributions -->
     <section class="project-section">
-        <h2>My Research Contributions</h2>
+        <h2>Research Contributions</h2>
         <div class="contributions">
-            <div class="contribution-section">
+            <div class="contribution-item">
                 <h3>Simulation Framework</h3>
                 <ul>
-                    <li><strong>Modular flight dynamics simulator:</strong> Built a novel modular flight dynamics simulator operating in both MATLAB and Python, capturing ground-effect aerodynamics and parametrizable airframe configurations.</li>
-                    <li><strong>Realistic disturbance modeling:</strong> Integrated wind disturbances, sensor noise, and surface proximity effects to enable training under realistic maritime operating conditions.</li>
+                    <li><strong>Modular flight dynamics:</strong> Novel simulator operating in both MATLAB and Python, capturing ground-effect aerodynamics with parametrizable airframe configurations.</li>
+                    <li><strong>Realistic disturbance modeling:</strong> Wind disturbances, sensor noise, and surface proximity effects to enable training under realistic maritime conditions.</li>
                 </ul>
             </div>
-            <div class="contribution-section">
+            <div class="contribution-item">
                 <h3>Autonomous GNC Policies</h3>
                 <ul>
-                    <li><strong>RL-based control strategies:</strong> Designed and trained deep RL controllers for autonomous low-altitude flight in ground effect, targeting robust operation for maritime and coastal missions.</li>
-                    <li><strong>Classical baseline comparisons:</strong> Benchmarked RL policies against PID, LQR, and MPPI controllers to rigorously evaluate the advantages of learning-based approaches.</li>
-                    <li><strong>Goal:</strong> Enable fully autonomous maritime and coastal operations for unmanned WIG vehicles, a class of vehicles with no existing autonomous GNC solution.</li>
+                    <li><strong>Deep RL controllers:</strong> Designed and trained policies for autonomous low-altitude flight in ground effect, targeting robust maritime and coastal operation.</li>
+                    <li><strong>Classical baseline comparisons:</strong> Rigorous benchmarking against PID, LQR, and MPPI controllers to evaluate learning-based advantages.</li>
+                    <li><strong>End goal:</strong> Enable fully autonomous WIG-vehicle operation — a class of aircraft with no existing autonomous GNC solution.</li>
                 </ul>
             </div>
         </div>
@@ -98,9 +122,9 @@
 
     <!-- Project Links section -->
     <section class="project-section">
-        <h2>Project Resources</h2>
+        <h2>Resources</h2>
         <div class="project-links">
-            <a href="https://airshipproject.eu/" target="_blank" class="project-link">Official Project Website</a>
+            <a href="https://airshipproject.eu/" target="_blank" class="project-link">AIRSHIP Project Website</a>
             <a href="https://airshipproject.eu/objectives/" target="_blank" class="project-link">Project Objectives</a>
         </div>
     </section>
@@ -109,17 +133,17 @@
     <section class="project-navigation">
         <a href="ice2thrust-project.html" class="nav-button">← Previous: ICE2THRUST</a>
         <a href="../index.html" class="nav-button">Back to Portfolio</a>
-        <a href="react.html" class="nav-button">Next Project: REACT →</a>
+        <a href="drift.html" class="nav-button">Next: DRIFT →</a>
     </section>
 
     <script>
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
+
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
+
             const button = document.querySelector('.theme-toggle');
             button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
         }
@@ -127,7 +151,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', savedTheme);
-            
+
             const button = document.querySelector('.theme-toggle');
             button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
         });

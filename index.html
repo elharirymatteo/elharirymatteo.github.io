@@ -27,11 +27,13 @@
 
     <!-- About Me Section -->
     <section class="about-section" id="about">
-        <h2>About Me</h2>
+        <span class="section-eyebrow">About</span>
+        <h2>Matteo El Hariry</h2>
         <div class="about-content"> <!-- Added flex container -->
             <div class="about-photo-block">
                 <img src="assets/img/me_profile.png" alt="Matteo El Hariry" class="my-photo">
                 <span class="about-role-badge">Postdoctoral Researcher</span>
+                <span class="about-affiliation"><a href="https://www.uni.lu/">University of Luxembourg</a></span>
             </div>
             <div class="about-text">
                 <p>Hello! I’m Matteo — a <strong>Postdoctoral Researcher</strong> in Reinforcement Learning and Autonomous Robotics at the <a href="https://www.uni.lu/">University of Luxembourg</a>. I completed my PhD in December 2025, with a thesis on <em>"Deep Reinforcement Learning Control for Autonomous Robots Mobility in Highly Uncertain Environments."</em></p>
@@ -108,46 +110,26 @@
                     <div class="carousel-slide">
                         <div class="project-card">
                             <div class="project-title-header">
-                                <h2>FALCON-S <span class="project-date">(2026)</span></h2>
-                            </div>
-                            <h3>Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</h3>
-                            <div class="project-images">
-                                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="FALCON-S WIG vehicle simulation" class="project-image" style="max-width: 80%; max-height: 300px; object-fit: contain;">
-                            </div>
-                            <p>FALCON-S introduces a comprehensive simulation and learning framework for autonomous control of fixed-wing <strong>Wing-in-Ground (WIG) effect vehicles</strong>. The suite addresses the unique aerodynamic challenges of near-surface flight, where ground-effect interactions create highly nonlinear and rapidly varying dynamics that classical controllers struggle to handle robustly.</p>
-                            <div class="project-highlights">
-                                <h4>Key Contributions:</h4>
-                                <ul>
-                                    <li>High-fidelity aerodynamics simulation suite for WIG-effect fixed-wing vehicles</li>
-                                    <li>Deep RL controllers robust to ground-proximity aerodynamic perturbations</li>
-                                    <li>Systematic evaluation benchmarks for near-surface autonomous flight</li>
-                                    <li>Benchmarked against classical GNC baselines (PID, LQR, MPPI)</li>
-                                </ul>
-                            </div>
-                            <p><em>RSS 2026 (under review)</em> &mdash; <strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-slide">
-                        <div class="project-card">
-                            <div class="project-title-header">
-                                <h2><a href="projects/airship-project.html">AIRSHIP <span class="project-date">(2023 – present)</span></a></h2>
+                                <h2><a href="projects/airship-project.html">AIRSHIP <span class="project-tag">FALCON-S</span> <span class="project-date">(2023 – present)</span></a></h2>
                                 <a href="projects/airship-project.html" class="view-project-btn">View project →</a>
                             </div>
-                            <h3>Autonomous Guidance, Navigation, and Control for Unmanned WIG Vehicles</h3>
+                            <h3>Autonomous GNC &amp; High-Fidelity Simulation for Unmanned WIG Vehicles</h3>
                             <div class="project-images">
                                 <img src="assets/img/airship/VERTICAL-airshipLogo.png" alt="AIRSHIP Logo" class="project-image-airship">
-                                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP Simulation" class="project-image-airship2">
+                                <img src="assets/gifs/airship/airship_xplane_sim.gif" alt="AIRSHIP / FALCON-S WIG vehicle simulation" class="project-image-airship2">
                             </div>
-                            <p>As <strong>Lead Research Scientist</strong> in the development of RL-based autonomous navigation systems, I'm working on autonomous Guidance, Navigation, and Control (GNC) strategies for innovative Unmanned WIG Vehicles (UWV). This <strong>Horizon Europe project</strong> focuses on developing cutting-edge autonomous systems for next-generation aviation.</p>
-                            <div class="project-highlights">
+                            <p>As <strong>Lead Research Scientist</strong> on the <strong>AIRSHIP Horizon Europe project</strong>, I develop autonomous Guidance, Navigation, and Control (GNC) for Unmanned <strong>Wing-in-Ground (WIG) Vehicles</strong> — a class of fixed-wing aircraft flying in ground effect, where rapidly varying aerodynamics challenge classical controllers.</p>
+                            <p>Within AIRSHIP, I built <strong>FALCON-S</strong>: a high-fidelity aerodynamic simulation framework for fixed-wing robots in ground effect, paired with deep RL controllers and PID, LQR, and MPPI baselines.</p>
+                            <!-- <div class="project-highlights">
+                                <h4>Key Contributions:</h4>
                                 <ul>
-                                    <li>Design and simulation of advanced GNC strategies for WIG vehicles</li>
-                                    <li>Deployment of RL-based policies for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency</li>
-                                    <li>Integration of machine learning algorithms for real-time decision making in complex environments</li>
+                                    <li><strong>FALCON-S</strong> simulation suite — high-fidelity ground-effect aerodynamics for fixed-wing WIG vehicles</li>
+                                    <li>Deep RL controllers robust to ground-proximity aerodynamic perturbations</li>
+                                    <li>Systematic benchmarking of classical GNC baselines (PID, LQR, MPPI)</li>
+                                    <li>RL-based GNC for autonomous maneuvering with enhanced speed, flexibility, and energy efficiency</li>
                                 </ul>
-                            </div>
-                            <p>For more information, check out <a href="https://airshipproject.eu/" target="_blank">airshipproject.eu</a>.</p>
+                            </div> -->
+                            <p class="project-meta-line"><em>FALCON-S — RSS 2026 (under review)</em> &middot; <a href="https://airshipproject.eu/" target="_blank">airshipproject.eu</a></p>
                         </div>
                     </div>
 
@@ -245,7 +227,7 @@
                 <div class="pub-venue"><em>International Conference on Space Robotics (iSPaRo) 2025</em></div>
             </li>
             <li class="pub-entry">
-                <div class="pub-title">Spacecraft Angular Rate Estimation via Event-Based Camera Sensing</div>
+                <div class="pub-title"><a href="https://arxiv.org/abs/2511.08041">Spacecraft Angular Rate Estimation via Event-Based Camera Sensing</a></div>
                 <div class="pub-authors">Vittorio Franzese, <strong>Matteo El Hariry</strong></div>
                 <div class="pub-venue"><em>Advances in Space Research (ASR)</em></div>
             </li>
