@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIRSHIP &amp; FALCON-S — Autonomous WIG Vehicle Control | Matteo El Hariry</title>
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <script src="../assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,9 @@
             <a href="../index.html#publications">Publications</a>
             <a href="../index.html#contact">Contact</a>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">
-            🌙 Dark
+        <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Switch to dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         </button>
     </nav>
 
@@ -36,7 +38,7 @@
         <div class="project-meta">
             <span class="project-type">Horizon Europe Project</span>
             <span class="project-role">Lead Research Scientist — RL-based Autonomous Navigation</span>
-            <span class="project-role">RSS 2026 (under review)</span>
+            <span class="project-role">IEEE TRL (under review)</span>
         </div>
     </section>
 
@@ -60,7 +62,7 @@
             </p>
             <p>
                 Out of this work, I built <strong>FALCON-S</strong> — a high-fidelity simulation and learning framework
-                for fixed-wing robots in ground effect, currently under review at <em>RSS 2026</em>. FALCON-S is the
+                for fixed-wing robots in ground effect, available as an <a href="https://arxiv.org/abs/2609.06046">arXiv preprint</a> and under review at <em>IEEE TRL</em>. FALCON-S is the
                 technical backbone behind AIRSHIP's autonomous GNC pipeline.
             </p>
         </div>
@@ -69,7 +71,7 @@
     <!-- FALCON-S Spotlight -->
     <section class="project-section spotlight-section">
         <h2>FALCON-S — Simulation &amp; Learning Framework</h2>
-        <p class="spotlight-tagline">Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</p>
+        <p class="spotlight-tagline">Fixed-wing ground-effect Aerodynamics Simulator and Flight Control Learning Suite</p>
         <p>
             FALCON-S addresses the unique aerodynamic challenges of near-surface flight, where ground-effect
             interactions create highly nonlinear and rapidly varying dynamics that classical controllers struggle to
@@ -78,23 +80,23 @@
         </p>
         <div class="technical-grid">
             <div class="tech-card">
-                <h3>🛩️ Ground-Effect Aerodynamics</h3>
+                <h3>Ground-Effect Aerodynamics</h3>
                 <p>Modular flight-dynamics simulator (MATLAB &amp; Python) capturing the highly nonlinear ground-effect aerodynamics of fixed-wing vehicles flying close to the surface.</p>
             </div>
             <div class="tech-card">
-                <h3>🤖 Deep RL Controllers</h3>
+                <h3>Deep RL Controllers</h3>
                 <p>Deep reinforcement learning policies for autonomous low-altitude flight, robust to ground-proximity aerodynamic perturbations, sensor noise, and wind disturbances.</p>
             </div>
             <div class="tech-card">
-                <h3>📊 Classical GNC Benchmarks</h3>
+                <h3>Classical GNC Benchmarks</h3>
                 <p>Systematic benchmarking of RL policies against classical baselines — PID, LQR, and MPPI — across the full envelope of near-surface flight regimes.</p>
             </div>
         </div>
         <p class="pub-callout">
             <strong>Publication:</strong>
-            <em>Fixed-Wing Robots in Ground Effect: A High-Fidelity Aerodynamic Simulation Framework for Flight Control</em>
-            — <strong>Matteo El-Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez.
-            <span class="pub-venue-pill">RSS 2026 (under review)</span>
+            <a href="https://arxiv.org/abs/2609.06046"><em>FALCON-S: Fixed-wing ground-effect Aerodynamics Simulator and Flight Control Learning Suite</em></a>.
+            <strong>Matteo El Hariry</strong>, Pedro Lima, Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez.
+            <span class="pub-venue-pill">arXiv preprint · under review at IEEE TRL</span>
         </p>
     </section>
 
@@ -136,26 +138,6 @@
         <a href="drift.html" class="nav-button">Next: DRIFT →</a>
     </section>
 
-    <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        });
-    </script>
 </body>
 
 </html>

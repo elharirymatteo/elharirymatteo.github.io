@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE2THRUST - Solar-Electric Water Propulsion System | Matteo El Hariry</title>
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <script src="../assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,9 @@
             <a href="../index.html#publications">Publications</a>
             <a href="../index.html#contact">Contact</a>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">
-            🌙 Dark
+        <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Switch to dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         </button>
     </nav>
 
@@ -45,7 +47,7 @@
             </div>
             <div class="project-description">
                 <p>
-                    ICE2THRUST represents a groundbreaking approach to space propulsion, developing the world's first 
+                    ICE2THRUST is developing a new approach to space propulsion: the world's first 
                     In-Situ Resource Utilisation (ISRU) end-to-end process chain that transforms ice into thrust. 
                     This innovative system utilizes water as a propellant, decomposed by an electrolyser into hydrogen 
                     and oxygen for subsequent use in a thruster.
@@ -63,15 +65,15 @@
         <h2>Technical Approach</h2>
         <div class="technical-grid">
             <div class="tech-card">
-                <h3>🚀 Solar-Electric Water Electrolysis Propulsion</h3>
+                <h3>Solar-Electric Water Electrolysis Propulsion</h3>
                 <p>Development of high-efficiency propulsion systems using water as propellant, achieving the highest specific impulse of all storable chemical propulsion systems.</p>
             </div>
             <div class="tech-card">
-                <h3>🤖 Autonomous Proximity Operations</h3>
+                <h3>Autonomous Proximity Operations</h3>
                 <p>RL-based algorithms for autonomous docking, proximity operations, and propellant refilling procedures with machine learning-enhanced decision making.</p>
             </div>
             <div class="tech-card">
-                <h3>⛏️ In-Space Resource Utilization</h3>
+                <h3>In-Space Resource Utilization</h3>
                 <p>Advanced systems for water extraction from icy regolith and integration with propulsion systems for self-sustainable space operations.</p>
             </div>
         </div>
@@ -117,27 +119,6 @@
         <a href="airship-project.html" class="nav-button">Next Project: AIRSHIP →</a>
     </section>
 
-    <script>
-        // Theme toggle functionality (same as main page)
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        });
-    </script>
 </body>
 
 </html>

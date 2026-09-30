@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REACT - RL for Satellite Attitude Control | Matteo El Hariry</title>
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <script src="../assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,9 @@
             <a href="../index.html#publications">Publications</a>
             <a href="../index.html#contact">Contact</a>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">
-            🌙 Dark
+        <button type="button" class="theme-toggle" onclick="toggleTheme()" aria-label="Switch to dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         </button>
     </nav>
 
@@ -64,19 +66,19 @@
         <h2>Key Contributions</h2>
         <div class="contributions">
             <div class="contribution-item">
-                <h3>🚀 Novel RL Architecture</h3>
+                <h3>Novel RL Architecture</h3>
                 <p>Adapted the PPO (Proximal Policy Optimization) algorithm for the unique challenges of satellite attitude control, including continuous action spaces and sparse reward signals in 3D rotational dynamics.</p>
             </div>
             <div class="contribution-item">
-                <h3>⚡ Robust Failure Handling</h3>
+                <h3>Robust Failure Handling</h3>
                 <p>Created adaptive policies capable of automatically detecting and compensating for reaction wheel failures — enabling attitude control with only 2 of 3 wheels operational, without explicit failure mode programming.</p>
             </div>
             <div class="contribution-item">
-                <h3>📊 Comprehensive Evaluation</h3>
+                <h3>Comprehensive Evaluation</h3>
                 <p>Extensive evaluations in high-fidelity simulation environments and a Hardware-in-the-Loop (HIL) setup with a space-graded on-board computer, validating real-time feasibility.</p>
             </div>
             <div class="contribution-item">
-                <h3>🛰️ Flight Hardware Legacy</h3>
+                <h3>Flight Hardware Legacy</h3>
                 <p>This research underpinned the AI-based navigation stack deployed on LICIACube and ArgoMoon, two cubesats that flew on NASA's DART and Artemis I missions respectively, marking some of the first deep RL-informed navigation systems flown in deep space.</p>
             </div>
         </div>
@@ -101,26 +103,6 @@
         <a href="drift.html" class="nav-button">Next Project: DRIFT →</a>
     </section>
 
-    <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            const button = document.querySelector('.theme-toggle');
-            button.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-        });
-    </script>
 </body>
 
 </html>
