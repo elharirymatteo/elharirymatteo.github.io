@@ -1,4 +1,4 @@
-// Home page behaviour (loaded with defer).
+// Behaviour for the home and ICE2THRUST pages (loaded with defer).
 
 // Project preview videos play only while on screen. Under
 // prefers-reduced-motion they stay on their poster frame.

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE2THRUST - Solar-Electric Water Propulsion System | Matteo El Hariry</title>
-    <link rel="stylesheet" href="../assets/css/custom.css?v=20261021">
-    <script src="../assets/js/theme.js?v=20261021"></script>
+    <link rel="stylesheet" href="../assets/css/custom.css?v=20261021b">
+    <script src="../assets/js/theme.js?v=20261021b"></script>
+    <script src="../assets/js/main.js?v=20261021b" defer></script>
+    <script src="../assets/js/scocat-preview.js?v=20261021b" defer></script>
 </head>
 
 <body>
@@ -28,6 +30,10 @@
 
     <!-- Project Header -->
     <section class="project-header">
+        <div class="project-header-tags">
+            <span class="header-tag">ICE2THRUST</span>
+            <span class="header-tag header-tag-accent">SCoCaT</span>
+        </div>
         <h1>Ice2Thrust</h1>
         <h2>Solar-Electric Water Propulsion System</h2>
         <div class="project-meta">
@@ -36,14 +42,76 @@
         </div>
     </section>
 
+    <!-- SCoCaT Results -->
+    <section class="project-section spotlight-section">
+        <h2>SCoCaT — Safe Autonomous Docking, from Simulation to Hardware</h2>
+        <p class="spotlight-tagline">Success Conditioned Constrained Reinforcement Learning for Spacecraft Docking · CoRL 2026 Spotlight</p>
+
+        <figure class="scocat-figure">
+            <video data-preview muted loop playsinline preload="none" width="1600" height="450" poster="../assets/video/scocat_lab_docking.jpg" aria-label="Docking runs on the floating-platform testbed: PPO collides with the target, CaT hovers until timeout, SCoCaT docks safely">
+                <source src="../assets/video/scocat_lab_docking.webm" type="video/webm">
+                <source src="../assets/video/scocat_lab_docking.mp4" type="video/mp4">
+            </video>
+            <figcaption class="scocat-methods">
+                <span class="scocat-method scocat-method-ppo"><strong>PPO</strong>violates constraints and collides</span>
+                <span class="scocat-method scocat-method-cat"><strong>CaT</strong>hovers until timeout</span>
+                <span class="scocat-method scocat-method-scocat"><strong>SCoCaT</strong>docks safely</span>
+            </figcaption>
+        </figure>
+
+        <p>
+            In docking, the goal sits inside the region where safety constraints tighten. There, termination-based
+            constrained RL such as CaT falls into what the paper calls <em>feasibility collapse</em>: the policy learns
+            to hover safely outside the goal and never docks. SCoCaT fixes this with a minimal change to PPO, a dense
+            per-step success signal through an auxiliary value critic, which restores task completion while keeping
+            the safety-critical constraints satisfied. Policies are evaluated on a 6U CubeSat (6-DoF) and transferred
+            zero-shot to the 3-DoF air-bearing floating platform in the SnT Zero-G lab.
+        </p>
+
+        <div class="performance-grid">
+            <div class="performance-metric">
+                <div class="metric-value">3 / 4</div>
+                <div class="metric-label">hardware docking runs succeeded</div>
+            </div>
+            <div class="performance-metric">
+                <div class="metric-value">1.0 ± 0.9 cm</div>
+                <div class="metric-label">final distance to the docking port</div>
+            </div>
+            <div class="performance-metric">
+                <div class="metric-value">Zero-shot</div>
+                <div class="metric-label">sim-to-real transfer</div>
+            </div>
+        </div>
+
+        <figure class="scocat-figure">
+            <div class="scocat-trajectories">
+                <canvas data-scocat-preview role="img" aria-label="Recorded docking trajectories on the floating platform: PPO enters the constraint region too fast, CaT stops short of the target, SCoCaT docks."></canvas>
+            </div>
+            <figcaption>Recorded trajectories on the floating platform. The dashed circle is the region where the docking constraints become active; a red ring marks a constraint violation.</figcaption>
+        </figure>
+
+        <figure class="scocat-figure">
+            <img class="scocat-radar" src="../assets/img/ice2thrust/scocat_results_radar.webp" width="1248" height="712" loading="lazy" alt="Radar plots of task completion and constraint compliance for unconstrained PPO, CaT and SCoCaT on the floating platform and a 6U CubeSat.">
+            <figcaption>Task completion and constraint compliance on the floating platform and a 6U CubeSat. CaT is compliant but fails to complete the task; SCoCaT recovers task completion while retaining high compliance.</figcaption>
+        </figure>
+
+        <p class="pub-callout">
+            <strong>Publication:</strong>
+            <a href="https://arxiv.org/abs/2609.06061"><em>SCoCaT: Success Conditioned Constrained Reinforcement Learning for Spacecraft Docking</em></a>.
+            Aman Arora, Ricard Marsal I Castan, <strong>Matteo El-Hariry</strong>, Miguel Olivares-Mendez.
+            <span class="pub-venue-pill">CoRL 2026 · Spotlight</span>
+        </p>
+        <div class="project-links">
+            <a href="https://snt-spacer.github.io/scocat-cstr-RL-docking/" target="_blank" rel="noopener" class="project-link">Project page</a>
+            <a href="https://arxiv.org/abs/2609.06061" target="_blank" rel="noopener" class="project-link">Paper</a>
+            <a href="https://github.com/snt-spacer/scocat-cstr-RL-docking" target="_blank" rel="noopener" class="project-link">Code</a>
+            <a href="https://youtu.be/GbKKmjLjmuY" target="_blank" rel="noopener" class="project-link">Video</a>
+        </div>
+    </section>
+
     <!-- Project Overview -->
     <section class="project-section">
         <h2>Project Overview</h2>
-            <div class="project-images">
-                <img src="../assets/img/ice2thrust/ice2thrust_concept.png" alt="ICE2THRUST concept" 
-     class="project-banner-image" 
-     style="max-width: 80%; max-height: 350px; object-fit: contain;">
-            </div>
             <div class="project-description">
                 <p>
                     ICE2THRUST is developing a new approach to space propulsion: the world's first 

@@ -912,6 +912,77 @@ iframe {
     border-radius: 4px;
 }
 
+/* SCoCaT results (ICE2THRUST); method colours match scocat-preview.js */
+.scocat-figure {
+    margin: 1.25rem 0;
+}
+
+.scocat-figure video,
+.scocat-radar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+/* matplotlib figure has a white background, so keep it on white in dark mode */
+.scocat-radar {
+    padding: 0.5rem;
+    background: #ffffff;
+}
+
+.scocat-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* One label under each third of the side-by-side footage */
+.scocat-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.scocat-method strong {
+    display: block;
+    color: var(--text);
+}
+
+.scocat-method strong::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    background: var(--method-color);
+}
+
+.scocat-method-ppo { --method-color: #4777c8; }
+.scocat-method-cat { --method-color: #b45f24; }
+.scocat-method-scocat { --method-color: #218739; }
+
+[data-theme="dark"] .scocat-method-ppo { --method-color: #86a8e6; }
+[data-theme="dark"] .scocat-method-cat { --method-color: #e0965f; }
+[data-theme="dark"] .scocat-method-scocat { --method-color: #5cc274; }
+
+.scocat-trajectories {
+    position: relative;
+    aspect-ratio: 5 / 2;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.scocat-trajectories > canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 /* Results (DRIFT) */
 .results-subsection {
     margin-bottom: 1.75rem;
@@ -1068,6 +1139,9 @@ iframe {
     }
     .spotlight-section {
         padding: 1rem;
+    }
+    .scocat-trajectories {
+        aspect-ratio: 4 / 3;
     }
 }
 
